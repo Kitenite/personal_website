@@ -1,24 +1,28 @@
-import Link from 'next/link'
-
-
+import Link from './HeaderLink'
+import { useRouter } from 'next/router';
 
 export default function Header() {
+  const router = useRouter();
   return (
     <div>
-      <Link href="/">
+      <Link href="/" activeClassName='active'>
         <a>About</a>
       </Link>
-      <Link href="/projects">
+      <Link href="/projects" activeClassName='active'>
         <a>Projects</a>
       </Link>
-      <Link href="/designs">
+      <Link href="/designs" activeClassName='active'>
         <a>Designs</a>
       </Link>
-      <Link href="/contact">
+      <Link href="/contact" activeClassName='active'>
         <a>Contact</a>
       </Link>
       <style jsx>{`
         padding: 2rem;
+        .active {
+          font-weight: bold;
+        }
+
         a {
           text-decoration: none;
           color: #3B3A3A;
