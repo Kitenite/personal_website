@@ -1,10 +1,11 @@
 import Layout from '../components/Layout';
 import PostLink from '../components/PostLink'
+import Title from '../components/Title'
 
 export default function Blog() {
   return (
     <Layout>
-      <h1>Designs</h1>
+      <Title>Designs</Title>
       <ul>
         <PostLink title="Design 1" />
       </ul>

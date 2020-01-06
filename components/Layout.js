@@ -1,16 +1,20 @@
-import Header from './Header'
+// Edit for global styles
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
-}
+import Header from './Header'
 
 export default function Layout(props) {
   return (
-    <div style={layoutStyle}>
-      <Header />
-      {props.children}
+    <div>
+      <div>
+        <Header />
+        {props.children}
+      </div>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet"/>
+      <style jsx>{`
+        font-family: 'Roboto', sans-serif;
+
+      `}</style>
+
     </div>
   )
 }

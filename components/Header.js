@@ -1,24 +1,36 @@
 import Link from 'next/link'
 
-const linkStyle = {
-  marginRight: 15
-}
+
 
 export default function Header() {
   return (
     <div>
       <Link href="/">
-        <a style={linkStyle}>Home</a>
+        <a>About</a>
       </Link>
       <Link href="/projects">
-        <a style={linkStyle}>Projects</a>
+        <a>Projects</a>
       </Link>
       <Link href="/designs">
-        <a style={linkStyle}>Designs</a>
+        <a>Designs</a>
       </Link>
       <Link href="/contact">
-        <a style={linkStyle}>Contact</a>
+        <a>Contact</a>
       </Link>
+      <style jsx>{`
+        padding: 2rem;
+        a {
+          text-decoration: none;
+          color: #3B3A3A;
+        }
+        a:active {
+          font-weight: bold;
+        }
+        a:hover {
+          opacity: 0.6;
+        }
+
+        `}</style>
     </div>
   )
 }

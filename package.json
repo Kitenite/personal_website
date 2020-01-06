@@ -1,5 +1,5 @@
 {
-  "name": "hello-next",
+  "name": "stuffbykiet.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "next": "^9.0.0",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-markdown": "^4.3.1"
   }
 }
