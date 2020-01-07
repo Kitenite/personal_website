@@ -1,26 +1,38 @@
 function VoyPanel() {
   return(
    <div>
-      <img src={"../../static/VoyPhone.png"} alt="Phone with Voy App open"/>
-      <div className="content" >
-        <a><b>Venture-backed</b> audio tour application</a>
+      <img className="phone_image" src={"../../static/VoyPhone.png"} alt="Phone with Voy App open"/>
+      <div className="content">
+        <img className="logo" src={"../../static/VoyLogo.png"} alt="Voy App Logo"/>
+        <b className="bold-text">Venture-backed</b>
+        <a className="text">audio tour application</a>
       </div>
       <style jsx>{`
-        display: inline-block;
-        img{
-          padding-top: 10vh;
-          float: left;
-          padding-left: 10vw;
-          height: 45vh;
+        padding-top: 8vh;
+        position: absolute;
+
+        .phone_image{
+          padding-left: 15vw;
+          height: 75vh;
         }
         .content{
-          float: left;
-          display: block;
-          padding-top: 15vh;
-          padding-left: 5vw;
+          padding-top: 5vh;
+          padding-left: 50vw;
         }
-        a{
+        .logo{
+          height: 8vh;
+        }
+        a, b{
           font-size: 3.5vh;
+        }
+
+        .bold-text{
+          white-space: nowrap;
+          padding-top: 22vh;
+        }
+        .text{
+          white-space: nowrap;
+          padding-top: 26vh;
         }
       `}</style>
     </div>
