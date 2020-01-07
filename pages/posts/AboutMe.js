@@ -3,7 +3,7 @@ function AboutMe () {
   return(
    <div>
       <img src={"../../static/AboutMe.png"} alt="Photo of Kiet"/>
-      <div className="content" class="content">
+      <div className="content" >
         <a>business | cs | design</a>
         <p>I came to the US at the age of 14 <b>from Vietnam</b></p>
         <p>I am a <b>Business</b> double-major minoring in <b>Computer Science</b> and <b>Design</b></p>
@@ -11,25 +11,27 @@ function AboutMe () {
         <p>Most of all, I like to <b>make stuff</b></p>
       </div>
       <style jsx>{`
-        display: inline-flex;
+        display: inline-block;
         img{
+          float: left;
           padding-top: 10vh;
           padding-left: 10vw;
           height: 45vh;
         }
         .content{
+          float: left;
           display: block;
           padding-top: 15vh;
-          padding-left: 5vh;
+          padding-left: 5vw;
         }
         a{
-          font-size: 3vw;
+          font-size: 4.5vh;
         }
         p{
           padding-top: 2vh;
           display: block;
           word-break: break-word;
-          font-size: 1.5vw;
+          font-size: 2.5vh;
         }
 
         `}
