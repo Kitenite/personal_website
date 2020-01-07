@@ -5,7 +5,7 @@ const ScrollPanel = props => (
         font-weight : lighter;
         height: 100vh;
         font-size: 30px;
-        font-size: 2vw;
+        font-size: 4vh;
         padding-left: 2vw;
         a{
 
