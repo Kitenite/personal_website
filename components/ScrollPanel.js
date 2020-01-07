@@ -1,16 +1,22 @@
 const ScrollPanel = props => (
-  <div>
-    {props.children}
+  <div className="wrapper">
+    <div className="title">{props.title}</div>
+    <div className="content">{props.children}</div>
     <style jsx>{`
-        font-weight : lighter;
+      .wrapper{
         min-height: 100vh;
         height: auto;
+        font-weight : lighter;
         font-size: 30px;
         font-size: 4vh;
         padding-left: 2vw;
-        a{
-
-        }
+      }
+      .title {
+        font-weight : lighter;
+        font-size: 30px;
+        font-size: 4vh;
+        padding-left: 2vw;
+      }
       `}</style>
   </div>
 )

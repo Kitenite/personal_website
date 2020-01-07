@@ -6,7 +6,8 @@ import Title from '../components/Title'
 import ScrollPanel from '../components/ScrollPanel'
 
 // Content
-import AboutMe from './posts/AboutMe'
+import AboutMePanel from './posts/AboutMePanel'
+import VoyPanel from './posts/VoyPanel'
 
 export default function Blog() {
   return (
@@ -14,24 +15,21 @@ export default function Blog() {
       <Title><a>kiet <b>Ho</b></a></Title>
 
       <ScrollPanel>
-        <AboutMe/>
+        <AboutMePanel/>
       </ScrollPanel>
 
-
-      <ScrollPanel>
-        <a><b>Voy </b>Audio Tour</a>
+      <ScrollPanel title={<a><b>Voy </b>Audio Tour</a>}>
+        <VoyPanel/>
       </ScrollPanel>
 
-      <ScrollPanel>
-        <a><b>AI </b>Projects</a>
+      <ScrollPanel title={<a><b>AI </b>Projects</a>}>
       </ScrollPanel>
 
-
-      <ScrollPanel>
-        <div>
-        <a><b>Hack</b>athon</a>
-        </div>
+      <ScrollPanel title={<a><b>Hack</b>athon</a>}>
       </ScrollPanel>
+      <style jsx> {`
+
+      `} </style>
 
     </Layout>
   );
