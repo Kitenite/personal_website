@@ -14,14 +14,13 @@ function AboutMe () {
         display: inline-block;
         img{
           float: left;
-          padding-top: 10vh;
           padding-left: 10vw;
           height: 45vh;
         }
         .content{
           float: left;
           display: block;
-          padding-top: 15vh;
+          padding-top: 5vh;
           padding-left: 5vw;
         }
         a{
