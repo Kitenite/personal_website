@@ -18,7 +18,7 @@ export default function Header() {
         <a>Contact</a>
       </Link>
       <style jsx>{`
-        padding: 2rem;
+        padding: 2vw;
         .active {
           font-weight: bold;
         }

@@ -26,7 +26,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 function Header() {
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["useRouter"])();
   return __jsx("div", {
-    className: "jsx-2912111625",
+    className: "jsx-4227216714",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -41,7 +41,7 @@ function Header() {
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-2912111625",
+    className: "jsx-4227216714",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -56,7 +56,7 @@ function Header() {
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-2912111625",
+    className: "jsx-4227216714",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -71,7 +71,7 @@ function Header() {
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-2912111625",
+    className: "jsx-4227216714",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -86,16 +86,16 @@ function Header() {
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-2912111625",
+    className: "jsx-4227216714",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
   }, "Contact")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "2912111625",
+    id: "4227216714",
     __self: this
-  }, ".jsx-2912111625{padding:2rem;}.active.jsx-2912111625{font-weight:bold;}a.jsx-2912111625{-webkit-text-decoration:none;text-decoration:none;color:#3B3A3A;}a.jsx-2912111625:active{font-weight:bold;}a.jsx-2912111625:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL2NvbXBvbmVudHMvSGVhZGVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1Ca0IsQUFFc0IsQUFFTSxBQUlJLEFBSUosQUFHTCxZQUNkLENBRUEsSUFiQSxBQVFBLGlDQUpnQixjQUNoQiIsImZpbGUiOiIvVXNlcnMva2lldGhvL1JlcG9zL3N0dWZmYnlraWV0LmNvbS9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJy4vSGVhZGVyTGluaydcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvcm91dGVyJztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSGVhZGVyKCkge1xuICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPExpbmsgaHJlZj1cIi9cIiBhY3RpdmVDbGFzc05hbWU9J2FjdGl2ZSc+XG4gICAgICAgIDxhPkFib3V0PC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9wcm9qZWN0c1wiIGFjdGl2ZUNsYXNzTmFtZT0nYWN0aXZlJz5cbiAgICAgICAgPGE+UHJvamVjdHM8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL2Rlc2lnbnNcIiBhY3RpdmVDbGFzc05hbWU9J2FjdGl2ZSc+XG4gICAgICAgIDxhPkRlc2lnbnM8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL2NvbnRhY3RcIiBhY3RpdmVDbGFzc05hbWU9J2FjdGl2ZSc+XG4gICAgICAgIDxhPkNvbnRhY3Q8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8c3R5bGUganN4PntgXG4gICAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICAgIC5hY3RpdmUge1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgICB9XG5cbiAgICAgICAgYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIGNvbG9yOiAjM0IzQTNBO1xuICAgICAgICB9XG4gICAgICAgIGE6YWN0aXZlIHtcbiAgICAgICAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICAgICAgfVxuICAgICAgICBhOmhvdmVyIHtcbiAgICAgICAgICBvcGFjaXR5OiAwLjY7XG4gICAgICAgIH1cblxuICAgICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gIClcbn1cbiJdfQ== */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/components/Header.js */"));
+  }, ".jsx-4227216714{padding:2vw;}.active.jsx-4227216714{font-weight:bold;}a.jsx-4227216714{-webkit-text-decoration:none;text-decoration:none;color:#3B3A3A;}a.jsx-4227216714:active{font-weight:bold;}a.jsx-4227216714:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL2NvbXBvbmVudHMvSGVhZGVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1Ca0IsQUFFcUIsQUFFTyxBQUlJLEFBSUosQUFHTCxZQUNkLEFBRUEsS0FiQSxBQVFBLGlDQUpnQixjQUNoQiIsImZpbGUiOiIvVXNlcnMva2lldGhvL1JlcG9zL3N0dWZmYnlraWV0LmNvbS9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJy4vSGVhZGVyTGluaydcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvcm91dGVyJztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSGVhZGVyKCkge1xuICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPExpbmsgaHJlZj1cIi9cIiBhY3RpdmVDbGFzc05hbWU9J2FjdGl2ZSc+XG4gICAgICAgIDxhPkFib3V0PC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9wcm9qZWN0c1wiIGFjdGl2ZUNsYXNzTmFtZT0nYWN0aXZlJz5cbiAgICAgICAgPGE+UHJvamVjdHM8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL2Rlc2lnbnNcIiBhY3RpdmVDbGFzc05hbWU9J2FjdGl2ZSc+XG4gICAgICAgIDxhPkRlc2lnbnM8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL2NvbnRhY3RcIiBhY3RpdmVDbGFzc05hbWU9J2FjdGl2ZSc+XG4gICAgICAgIDxhPkNvbnRhY3Q8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8c3R5bGUganN4PntgXG4gICAgICAgIHBhZGRpbmc6IDJ2dztcbiAgICAgICAgLmFjdGl2ZSB7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgIH1cblxuICAgICAgICBhIHtcbiAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgY29sb3I6ICMzQjNBM0E7XG4gICAgICAgIH1cbiAgICAgICAgYTphY3RpdmUge1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgICB9XG4gICAgICAgIGE6aG92ZXIge1xuICAgICAgICAgIG9wYWNpdHk6IDAuNjtcbiAgICAgICAgfVxuXG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKVxufVxuIl19 */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/components/Header.js */"));
 }
 
 /***/ }),
@@ -176,14 +176,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function Layout(props) {
   return __jsx("div", {
-    className: "jsx-502828209",
+    className: "jsx-3332807636",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-502828209",
+    className: "jsx-3332807636",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -198,16 +198,16 @@ function Layout(props) {
   }), props.children), __jsx("link", {
     href: "https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap",
     rel: "stylesheet",
-    className: "jsx-502828209",
+    className: "jsx-3332807636",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "502828209",
+    id: "3332807636",
     __self: this
-  }, ".jsx-502828209{font-family:'Roboto',sans-serif;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL2NvbXBvbmVudHMvTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVlrQixBQUUwQyxnQ0FFbkMiLCJmaWxlIjoiL1VzZXJzL2tpZXRoby9SZXBvcy9zdHVmZmJ5a2lldC5jb20vY29tcG9uZW50cy9MYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBFZGl0IGZvciBnbG9iYWwgc3R5bGVzXG5cbmltcG9ydCBIZWFkZXIgZnJvbSAnLi9IZWFkZXInXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExheW91dChwcm9wcykge1xuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8ZGl2PlxuICAgICAgICA8SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgICA8bGluayBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzoxMDAsNDAwLDcwMCZkaXNwbGF5PXN3YXBcIiByZWw9XCJzdHlsZXNoZWV0XCIvPlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG5cbiAgICAgIGB9PC9zdHlsZT5cblxuICAgIDwvZGl2PlxuICApXG59XG4iXX0= */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/components/Layout.js */"));
+  }, ".jsx-3332807636{font-family:'Roboto',sans-serif;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL2NvbXBvbmVudHMvTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVlrQixBQUUwQyxnQ0FDbkMiLCJmaWxlIjoiL1VzZXJzL2tpZXRoby9SZXBvcy9zdHVmZmJ5a2lldC5jb20vY29tcG9uZW50cy9MYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBFZGl0IGZvciBnbG9iYWwgc3R5bGVzXG5cbmltcG9ydCBIZWFkZXIgZnJvbSAnLi9IZWFkZXInXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExheW91dChwcm9wcykge1xuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8ZGl2PlxuICAgICAgICA8SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgICA8bGluayBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzoxMDAsNDAwLDcwMCZkaXNwbGF5PXN3YXBcIiByZWw9XCJzdHlsZXNoZWV0XCIvPlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgICBgfTwvc3R5bGU+XG5cbiAgICA8L2Rpdj5cbiAgKVxufVxuIl19 */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/components/Layout.js */"));
 }
 
 /***/ }),
@@ -9702,7 +9702,7 @@ function Blog() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fprojects.js ***!
   \******************************************************************************************************************************************/
@@ -9725,5 +9725,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=projects.js.map
