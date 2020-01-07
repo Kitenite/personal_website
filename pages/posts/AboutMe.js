@@ -9,10 +9,12 @@ function AboutMe () {
         <p>I am a <b>Business</b> double-major minoring in <b>Computer Science</b> and <b>Design</b></p>
         <p>I am <b>self-taught</b> in English, Programming and Entreprenuership</p>
         <p>Most of all, I like to <b>make stuff</b></p>
+
       </div>
       <style jsx>{`
         display: inline-block;
         img{
+          padding-top: 10vh;
           float: left;
           padding-left: 10vw;
           height: 45vh;
@@ -20,7 +22,7 @@ function AboutMe () {
         .content{
           float: left;
           display: block;
-          padding-top: 5vh;
+          padding-top: 15vh;
           padding-left: 5vw;
         }
         a{
