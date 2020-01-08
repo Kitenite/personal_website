@@ -13,7 +13,8 @@ function VoyPanel() {
 
         .phone_image{
           padding-left: 15vw;
-          height: 75vh;
+          max-height: 75vh;
+          max-width: 75vw;
         }
         .content{
           padding-top: 5vh;
@@ -28,11 +29,11 @@ function VoyPanel() {
 
         .bold-text{
           white-space: nowrap;
-          padding-top: 22vh;
+          padding-top: 19vh;
         }
         .text{
           white-space: nowrap;
-          padding-top: 26vh;
+          padding-top: 23.5vh;
         }
       `}</style>
     </div>

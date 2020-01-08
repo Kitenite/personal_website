@@ -6,7 +6,7 @@ import ContactPanel from './posts/ContactPanel'
 
 export default function Contact() {
   return (
-    <Layout>
+    <Layout page_title="Contact Kiet">
       <Title>Contact</Title>
       <ScrollPanel title= {<a><b>Get</b>In Touch</a>}>
         <ContactPanel/>

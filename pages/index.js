@@ -1,5 +1,4 @@
 // Components
-
 import Layout from '../components/Layout';
 import PostLink from '../components/PostLink'
 import Title from '../components/Title'
@@ -11,7 +10,7 @@ import VoyPanel from './posts/VoyPanel'
 
 export default function Blog() {
   return (
-    <Layout>
+    <Layout page_title="Stuff By Kiet">
       <Title><a>kiet <b>Ho</b></a></Title>
 
       <ScrollPanel>

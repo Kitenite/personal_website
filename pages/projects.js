@@ -8,7 +8,7 @@ import VoyPanel from './posts/VoyPanel'
 
 export default function Blog() {
   return (
-    <Layout>
+    <Layout page_title="Projects By Kiet">
       <Title>Projects</Title>
       <ScrollPanel title={<a><b>Voy</b> Audio Tour</a>}>
         <VoyPanel/>
