@@ -26,6 +26,9 @@ export default function Blog() {
 
       <ScrollPanel title={<a><b>Hack</b>athon</a>}>
       </ScrollPanel>
+
+      <ScrollPanel title={<a><b>More</b> To Come</a>}/>
+
       <style jsx> {`
 
       `} </style>

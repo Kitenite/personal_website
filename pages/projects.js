@@ -13,6 +13,9 @@ export default function Blog() {
       <ScrollPanel title={<a><b>Voy</b> Audio Tour</a>}>
         <VoyPanel/>
       </ScrollPanel>
+      
+      <ScrollPanel title={<a><b>More</b> To Come</a>}/>
+
     </Layout>
   );
 }
