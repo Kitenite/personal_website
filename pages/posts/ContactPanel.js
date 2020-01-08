@@ -1,43 +1,53 @@
 function ContactPanel() {
   return(
-    <div>
+    <div className="all">
       <div className = "email-resume">
-        <a><b>Resumé</b></a>
+        <b>hoakiet98@gmail.com</b>
         <br/>
-        <a>hoakiet98@gmail.com</a>
+        <a href="https://kitenite.github.io/resume/" target="_blank">Resumé</a>
       </div>
 
       <div className = "professional">
-        <a><b>Professional</b></a><br/>
-        <a href="https://www.linkedin.com/in/kiet-ho/">LinkedIn</a><br/>
-        <a>GitHub</a><br/>
-        <a>Dribbble</a><br/>
+        <b>Professional</b><br/>
+        <a href="https://www.linkedin.com/in/kiet-ho/" target="_blank">LinkedIn</a><br/>
+        <a href="https://github.com/Kitenite" target="_blank">GitHub</a><br/>
+        <a href="https://dribbble.com/FlyaKiet" target="_blank">Dribbble</a><br/>
       </div>
 
       <div className = "social">
-        <a><b>Social</b></a><br/>
-        <a>Instagram</a><br/>
-        <a>Facebook</a><br/>
-        <a>Twitter</a><br/>
+        <b>Social</b><br/>
+        <a href="https://www.instagram.com/flyakiet/" target="_blank">Instagram</a><br/>
+        <a href="https://www.facebook.com/KietHo1998" target="_blank">Facebook</a><br/>
+        <a href="https://twitter.com/FlyaKiet" target="_blank">Twitter</a><br/>
       </div>
 
       <style jsx>{`
         font-size: 2vh;
-        padding-top: 8vh;
-
+        position:relative;
+        line-height: 2.5vh;
+        .all{
+          padding-top: 18vh;
+        }
         .email-resume{
           text-align: center;
+          padding-bottom: 5vh;
         }
         .professional{
-          padding-top: 10vh;
           padding-left: 25vw;
           float:left;
         }
         .social{
-          padding-top: 10vh;
           padding-right: 25vw;
           float:right;
         }
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        a:hover {
+          color: gray;
+        }
+
         `}</style>
     </div>
 

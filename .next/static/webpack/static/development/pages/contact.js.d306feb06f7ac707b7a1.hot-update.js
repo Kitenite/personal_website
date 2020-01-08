@@ -1,0 +1,215 @@
+webpackHotUpdate("static/development/pages/contact.js",{
+
+/***/ "./pages/posts/ContactPanel.js":
+/*!*************************************!*\
+  !*** ./pages/posts/ContactPanel.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/kietho/Repos/stuffbykiet.com/pages/posts/ContactPanel.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function ContactPanel() {
+  return __jsx("div", {
+    className: "jsx-2896737280" + " " + "all",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "jsx-2896737280" + " " + "email-resume",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://kitenite.github.io/resume/",
+    target: "_blank",
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("b", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "Resum\xE9")), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }), __jsx("a", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "hoakiet98@gmail.com")), __jsx("div", {
+    className: "jsx-2896737280" + " " + "professional",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("b", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "Professional"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "https://www.linkedin.com/in/kiet-ho/",
+    target: "_blank",
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "LinkedIn"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "https://github.com/Kitenite",
+    target: "_blank",
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "GitHub"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "https://dribbble.com/FlyaKiet",
+    target: "_blank",
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "Dribbble"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "jsx-2896737280" + " " + "social",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("b", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Social"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "https://www.instagram.com/flyakiet/",
+    target: "_blank",
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Instagram"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "https://www.facebook.com/KietHo1998",
+    target: "_blank",
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "Facebook"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "https://twitter.com/FlyaKiet",
+    target: "_blank",
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Twitter"), __jsx("br", {
+    className: "jsx-2896737280",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "2896737280",
+    __self: this
+  }, ".jsx-2896737280{font-size:2vh;position:relative;line-height:2.5vh;}.all.jsx-2896737280{padding-top:18vh;}.email-resume.jsx-2896737280{text-align:center;padding-bottom:5vh;}.professional.jsx-2896737280{padding-left:25vw;float:left;}.social.jsx-2896737280{padding-right:25vw;float:right;}a.jsx-2896737280{color:black;}a.jsx-2896737280:hover{color:gray;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL3Bvc3RzL0NvbnRhY3RQYW5lbC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1QmtCLEFBRXVCLEFBSUssQUFHQyxBQUlBLEFBSUMsQUFJUCxBQUdELFdBQ2IsQ0FIQSxFQW5CaUIsR0FJakIsQ0FHcUIsQUFJVCxDQUlDLFVBSGIsRUFJQSxDQWZrQixLQU9sQixhQWdCQSIsImZpbGUiOiIvVXNlcnMva2lldGhvL1JlcG9zL3N0dWZmYnlraWV0LmNvbS9wYWdlcy9wb3N0cy9Db250YWN0UGFuZWwuanMiLCJzb3VyY2VzQ29udGVudCI6WyJmdW5jdGlvbiBDb250YWN0UGFuZWwoKSB7XG4gIHJldHVybihcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImFsbFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWUgPSBcImVtYWlsLXJlc3VtZVwiPlxuICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly9raXRlbml0ZS5naXRodWIuaW8vcmVzdW1lL1wiIHRhcmdldD1cIl9ibGFua1wiPjxiPlJlc3Vtw6k8L2I+PC9hPlxuICAgICAgICA8YnIvPlxuICAgICAgICA8YT5ob2FraWV0OThAZ21haWwuY29tPC9hPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lID0gXCJwcm9mZXNzaW9uYWxcIj5cbiAgICAgICAgPGI+UHJvZmVzc2lvbmFsPC9iPjxici8+XG4gICAgICAgIDxhIGhyZWY9XCJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4va2lldC1oby9cIiB0YXJnZXQ9XCJfYmxhbmtcIj5MaW5rZWRJbjwvYT48YnIvPlxuICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL0tpdGVuaXRlXCIgdGFyZ2V0PVwiX2JsYW5rXCI+R2l0SHViPC9hPjxici8+XG4gICAgICAgIDxhIGhyZWY9XCJodHRwczovL2RyaWJiYmxlLmNvbS9GbHlhS2lldFwiIHRhcmdldD1cIl9ibGFua1wiPkRyaWJiYmxlPC9hPjxici8+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPGRpdiBjbGFzc05hbWUgPSBcInNvY2lhbFwiPlxuICAgICAgICA8Yj5Tb2NpYWw8L2I+PGJyLz5cbiAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vZmx5YWtpZXQvXCIgdGFyZ2V0PVwiX2JsYW5rXCI+SW5zdGFncmFtPC9hPjxici8+XG4gICAgICAgIDxhIGhyZWY9XCJodHRwczovL3d3dy5mYWNlYm9vay5jb20vS2lldEhvMTk5OFwiIHRhcmdldD1cIl9ibGFua1wiPkZhY2Vib29rPC9hPjxici8+XG4gICAgICAgIDxhIGhyZWY9XCJodHRwczovL3R3aXR0ZXIuY29tL0ZseWFLaWV0XCIgdGFyZ2V0PVwiX2JsYW5rXCI+VHdpdHRlcjwvYT48YnIvPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgZm9udC1zaXplOiAydmg7XG4gICAgICAgIHBvc2l0aW9uOnJlbGF0aXZlO1xuICAgICAgICBsaW5lLWhlaWdodDogMi41dmg7XG4gICAgICAgIC5hbGx7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDE4dmg7XG4gICAgICAgIH1cbiAgICAgICAgLmVtYWlsLXJlc3VtZXtcbiAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206IDV2aDtcbiAgICAgICAgfVxuICAgICAgICAucHJvZmVzc2lvbmFse1xuICAgICAgICAgIHBhZGRpbmctbGVmdDogMjV2dztcbiAgICAgICAgICBmbG9hdDpsZWZ0O1xuICAgICAgICB9XG4gICAgICAgIC5zb2NpYWx7XG4gICAgICAgICAgcGFkZGluZy1yaWdodDogMjV2dztcbiAgICAgICAgICBmbG9hdDpyaWdodDtcbiAgICAgICAgfVxuICAgICAgICBhe1xuICAgICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgICAgfVxuICAgICAgICBhOmhvdmVyIHtcbiAgICAgICAgICBjb2xvcjogZ3JheTtcbiAgICAgICAgfVxuXG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cblxuICApfVxuXG5leHBvcnQgZGVmYXVsdCBDb250YWN0UGFuZWxcbiJdfQ== */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/pages/posts/ContactPanel.js */"));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactPanel);
+
+/***/ })
+
+})
+//# sourceMappingURL=contact.js.d306feb06f7ac707b7a1.hot-update.js.map
