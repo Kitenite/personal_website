@@ -1,5 +1,4 @@
 import Layout from '../components/Layout';
-import PostLink from '../components/PostLink'
 import Title from '../components/Title'
 import ScrollPanel from '../components/ScrollPanel'
 
@@ -13,7 +12,7 @@ export default function Blog() {
       <ScrollPanel title={<a><b>Voy</b> Audio Tour</a>}>
         <VoyPanel/>
       </ScrollPanel>
-      
+
       <ScrollPanel title={<a><b>More</b> To Come</a>}/>
 
     </Layout>

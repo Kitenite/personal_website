@@ -1,6 +1,6 @@
 // Components
+import Link from 'next/link';
 import Layout from '../components/Layout';
-import PostLink from '../components/PostLink'
 import Title from '../components/Title'
 import ScrollPanel from '../components/ScrollPanel'
 
@@ -22,6 +22,9 @@ export default function Blog() {
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>AI </b>Projects</a>}>
+      <Link href="/projects/digit_recognizer">
+        <a>Digit recognizer</a>
+      </Link>
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>Hack</b>athon</a>}>
