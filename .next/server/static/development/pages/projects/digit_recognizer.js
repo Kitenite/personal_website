@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2335,9 +2335,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_signature_canvas__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-signature-canvas */ "react-signature-canvas");
 /* harmony import */ var react_signature_canvas__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_signature_canvas__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/Button */ "./components/Button.js");
+/* harmony import */ var _ResultGraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ResultGraph */ "./pages/projects/components/ResultGraph.js");
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -2351,7 +2353,7 @@ function DrawingCanvas() {
   const {
     0: resultArray,
     1: setResultArray
-  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null);
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([[0, 100], [1, 50], [2, 2]]);
   const {
     0: height,
     1: setHeight
@@ -2406,7 +2408,7 @@ function DrawingCanvas() {
       let index = unsorted_array.indexOf(Math.max(...unsorted_array));
       let confidence = (unsorted_array[index] * 100).toFixed(2);
 
-      if (confidence > 0) {
+      if (confidence > 1) {
         sorted_array[i] = [index, confidence];
         unsorted_array[index] = 0;
       }
@@ -2483,9 +2485,9 @@ function DrawingCanvas() {
   };
 
   const result_graph = resultArray => {
-    return __jsx("div", null, resultArray.map((result, index) => __jsx("p", {
-      key: index
-    }, "Number: ", result[0], " ", __jsx("br", null), "Confidence: ", result[1], "%")));
+    return __jsx(_ResultGraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      result: resultArray
+    });
   };
 
   return __jsx("div", null, __jsx(react_signature_canvas__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2508,7 +2510,7 @@ function DrawingCanvas() {
   }, "clear"), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "button",
     onClick: submitPad
-  }, "submit")), resultArray ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("a", null, "Your result: "), __jsx("a", null, result_graph(resultArray))) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("a", null, "Processed Digit"), __jsx("img", {
+  }, "submit")), resultArray ? __jsx("div", null, result_graph(resultArray)) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("a", null, "Processed Digit"), __jsx("img", {
     src: imageURL,
     alt: "my signature",
     style: {
@@ -2518,6 +2520,52 @@ function DrawingCanvas() {
       width: "150px"
     }
   })) : null);
+}
+
+/***/ }),
+
+/***/ "./pages/projects/components/ResultGraph.js":
+/*!**************************************************!*\
+  !*** ./pages/projects/components/ResultGraph.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ResultGraph; });
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+function ResultGraph(props) {
+  const resultArray = props.result;
+  return __jsx("div", {
+    className: "jsx-1580602796"
+  }, __jsx("p", {
+    className: "jsx-1580602796" + " " + "title"
+  }, "Result"), __jsx("a", {
+    className: "jsx-1580602796" + " " + "final-answer"
+  }, "Final answer: ", resultArray[0][0]), __jsx("p", {
+    className: "jsx-1580602796" + " " + "title"
+  }, "Confidence breakdown:"), resultArray.map((result, index) => __jsx("div", {
+    className: "jsx-1580602796" + " " + "confidence-element"
+  }, __jsx("div", {
+    style: {
+      backgroundColor: result[1] > 75 ? '#5DEBA4' : result[1] >= 50 ? '#FFCA41' : '#FF6868',
+      height: result[1] * 2
+    },
+    className: "jsx-1580602796" + " " + "bar"
+  }), __jsx("p", {
+    className: "jsx-1580602796"
+  }, result[0]), __jsx("p", {
+    className: "jsx-1580602796"
+  }, result[1], "%"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "1580602796"
+  }, ".title.jsx-1580602796{padding-bottom:0.1vh;font-size:3vh;-webkit-text-decoration:underline;text-decoration:underline;}.confidence-element.jsx-1580602796{padding:2vw;display:inline-block;layout:inline-flex;text-align:center;}.bar.jsx-1580602796{height:20vh;width:1vw;border-radius:2vw;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL3Byb2plY3RzL2NvbXBvbmVudHMvUmVzdWx0R3JhcGguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUJrQixBQUcrQixBQUtULEFBTUMsWUFMUyxBQU1YLFNBWEcsQ0FZSSxXQU5FLEVBTE8sS0FZNUIsWUFObUIsa0JBQ25CLHlCQU5BIiwiZmlsZSI6Ii9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL3Byb2plY3RzL2NvbXBvbmVudHMvUmVzdWx0R3JhcGguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSZXN1bHRHcmFwaChwcm9wcyl7XG4gIGNvbnN0IHJlc3VsdEFycmF5ID0gcHJvcHMucmVzdWx0XG4gIHJldHVybihcbiAgICA8ZGl2PlxuICAgICAgPHAgY2xhc3NOYW1lPVwidGl0bGVcIj5SZXN1bHQ8L3A+XG4gICAgICA8YSBjbGFzc05hbWU9XCJmaW5hbC1hbnN3ZXJcIj5GaW5hbCBhbnN3ZXI6IHtyZXN1bHRBcnJheVswXVswXX08L2E+XG4gICAgICA8cCBjbGFzc05hbWU9XCJ0aXRsZVwiPkNvbmZpZGVuY2UgYnJlYWtkb3duOjwvcD5cbiAgICAgIHtyZXN1bHRBcnJheS5tYXAoKHJlc3VsdCwgaW5kZXgpID0+IChcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb25maWRlbmNlLWVsZW1lbnRcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJhclwiIHN0eWxlPXt7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IChyZXN1bHRbMV0gPjc1KSA/ICcjNURFQkE0JyA6IChyZXN1bHRbMV0gPj01MCkgPycjRkZDQTQxJzonI0ZGNjg2OCcsXG4gICAgICAgICAgICBoZWlnaHQ6IHJlc3VsdFsxXSoyXG4gICAgICAgICAgfX0vPlxuICAgICAgICAgIDxwPntyZXN1bHRbMF19PC9wPlxuICAgICAgICAgIDxwPntyZXN1bHRbMV19JTwvcD5cbiAgICAgICAgPC9kaXY+XG4gICAgICApKX1cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgLnRpdGxle1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOjAuMXZoO1xuICAgICAgICAgIGZvbnQtc2l6ZTozdmg7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gICAgICAgIH1cbiAgICAgICAgLmNvbmZpZGVuY2UtZWxlbWVudHtcbiAgICAgICAgICBwYWRkaW5nOjJ2dztcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgbGF5b3V0OiBpbmxpbmUtZmxleDtcbiAgICAgICAgICB0ZXh0LWFsaWduOmNlbnRlcjtcbiAgICAgICAgfVxuICAgICAgICAuYmFye1xuICAgICAgICAgIGhlaWdodDogMjB2aDtcbiAgICAgICAgICB3aWR0aDogMXZ3O1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6MnZ3O1xuICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKVxufVxuIl19 */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/pages/projects/components/ResultGraph.js */"));
 }
 
 /***/ }),
@@ -2576,7 +2624,7 @@ class DigitRecognizer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compo
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!**************************************************!*\
   !*** multi ./pages/projects/digit_recognizer.js ***!
   \**************************************************/

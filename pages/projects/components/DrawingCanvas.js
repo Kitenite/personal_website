@@ -1,13 +1,14 @@
 import {useState, useRef, useEffect} from 'react';
 import SignatureCanvas from 'react-signature-canvas'
 import Button from '../../../components/Button';
+import ResultGraph from './ResultGraph'
 
 
 export default function DrawingCanvas(){
   // useStates
   const sigCanvas = useRef({});
   const [imageURL, setImageURL] = useState(null);
-  const [resultArray, setResultArray] = useState(null);
+  const [resultArray, setResultArray] = useState([[0,100],[1,50],[2,2]]);
   const [height, setHeight] = useState(null)
   const [width, setWidth] = useState(null)
   // Canvas Configuration
@@ -56,7 +57,7 @@ export default function DrawingCanvas(){
     for (var i = 0; i< unsorted_array.length; i++){
       let index = unsorted_array.indexOf(Math.max(...unsorted_array));
       let confidence = (unsorted_array[index]*100).toFixed(2)
-      if (confidence > 0){
+      if (confidence > 1){
         sorted_array[i] = [index, confidence];
         unsorted_array[index] = 0;
       }
@@ -133,11 +134,8 @@ export default function DrawingCanvas(){
   }
 
   const result_graph = (resultArray) => {
-    return(<div>
-      {resultArray.map((result, index) => (
-        <p key={index}>Number: {result[0]} <br/>Confidence: {result[1]}%</p>
-    ))}
-    </div>
+    return(
+      <ResultGraph result={resultArray}/>
     )
   }
 
@@ -158,11 +156,7 @@ export default function DrawingCanvas(){
         <Button className="button" onClick={clearPad} isClear="true">clear</Button>
         <Button className="button" onClick={submitPad}>submit</Button>
       </div>
-      {resultArray ? (
-        <>
-          <a>Your result: </a>
-          <a>{result_graph(resultArray)}</a>
-        </>
+      {resultArray ? (<div>{result_graph(resultArray)}</div>
       ) : null}
 
       {imageURL ? (
