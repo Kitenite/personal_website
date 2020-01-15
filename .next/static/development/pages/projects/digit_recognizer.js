@@ -4397,7 +4397,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects%2Fdigit_recognizer&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fprojects%2Fdigit_recognizer.js ***!
   \********************************************************************************************************************************************************************************/
@@ -4420,5 +4420,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=digit_recognizer.js.map
