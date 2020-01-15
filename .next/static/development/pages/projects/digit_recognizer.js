@@ -4127,7 +4127,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ImageProcessor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ImageProcessor */ "./pages/projects/components/ImageProcessor.js");
 
 
-var _jsxFileName = "/Users/kietho/Repos/stuffbykiet.com/pages/projects/components/DrawingCanvas.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -4180,13 +4179,16 @@ function DrawingCanvas() {
 
 
   var apiCall = function apiCall(image_array) {
-    var model_url = 'http://54.197.197.40/v1/models/digit_model:predict';
-    var xhr = new XMLHttpRequest(); // get a callback when the server responds
+    var model_url = '/api/v1/models/digit_model:predict';
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = false; // get a callback when the server responds
 
     xhr.addEventListener('load', function () {
       // Get results and process
-      var reponse = JSON.parse(xhr.responseText);
-      processResult(reponse);
+      if (xhr.responseText) {
+        var reponse = JSON.parse(xhr.responseText);
+        processResult(reponse);
+      }
     });
     xhr.open('POST', model_url);
     xhr.send(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()({
@@ -4212,37 +4214,14 @@ function DrawingCanvas() {
   };
 
   var result_graph = function result_graph(resultArray) {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65
-      },
-      __self: this
-    }, resultArray.map(function (result, index) {
+    return __jsx("div", null, resultArray.map(function (result, index) {
       return __jsx("p", {
-        key: index,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        },
-        __self: this
-      }, "Number: ", result[0], " ", __jsx("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        },
-        __self: this
-      }), "Confidence: ", result[1], "%");
+        key: index
+      }, "Number: ", result[0], " ", __jsx("br", null), "Confidence: ", result[1], "%");
     }));
   };
 
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }, __jsx(react_signature_canvas__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  return __jsx("div", null, __jsx(react_signature_canvas__WEBPACK_IMPORTED_MODULE_3___default.a, {
     ref: sigCanvas,
     penColor: "black",
     velocityFilterWeight: "0",
@@ -4252,54 +4231,16 @@ function DrawingCanvas() {
       width: canvasWidth,
       height: canvasWidth,
       className: 'signatureCanvas'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
+    }
   }), __jsx("div", {
-    className: "button-wrapper",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
+    className: "button-wrapper"
   }, __jsx("button", {
     className: "button",
-    onClick: clearPad,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
+    onClick: clearPad
   }, "clear"), __jsx("button", {
     className: "button",
-    onClick: submitPad,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
-    },
-    __self: this
-  }, "submit")), resultArray ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 92
-    },
-    __self: this
-  }, "Your result: "), __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93
-    },
-    __self: this
-  }, result_graph(resultArray))) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99
-    },
-    __self: this
-  }, "Processed Digit"), __jsx("img", {
+    onClick: submitPad
+  }, "submit")), resultArray ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("a", null, "Your result: "), __jsx("a", null, result_graph(resultArray))) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("a", null, "Processed Digit"), __jsx("img", {
     src: imageURL,
     alt: "my signature",
     style: {
@@ -4307,12 +4248,7 @@ function DrawingCanvas() {
       margin: "0 auto",
       border: "1px solid black",
       width: "150px"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100
-    },
-    __self: this
+    }
   })) : null);
 }
 
@@ -4391,8 +4327,8 @@ var ImageProcessor = function ImageProcessor(img) {
   }
 
   image_array[27] = final_row; // Print out array
+  // console.log(image_array);
 
-  console.log(image_array);
   cctx.putImageData(imgData, 0, 0);
   var newImage = canvas;
   return [newImage, image_array];

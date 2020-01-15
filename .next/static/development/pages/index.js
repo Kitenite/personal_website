@@ -10919,7 +10919,7 @@ function VoyPanel() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 0:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************/
@@ -10942,5 +10942,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

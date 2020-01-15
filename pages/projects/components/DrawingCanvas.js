@@ -34,13 +34,16 @@ export default function DrawingCanvas(){
 
   // Query our AI model
   const apiCall = (image_array) => {
-    const model_url = 'http://54.197.197.40/v1/models/digit_model:predict';
+    const model_url = '/api/v1/models/digit_model:predict';
     var xhr = new XMLHttpRequest();
+    xhr.withCredentials = false;
     // get a callback when the server responds
     xhr.addEventListener('load', () => {
       // Get results and process
-      let reponse = JSON.parse(xhr.responseText);
-      processResult(reponse)
+      if (xhr.responseText){
+        let reponse = JSON.parse(xhr.responseText);
+        processResult(reponse)
+      }
     });
     xhr.open('POST', model_url);
     xhr.send(JSON.stringify({ "instances": image_array }));
