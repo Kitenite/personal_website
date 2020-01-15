@@ -1,5 +1,7 @@
 import {useState, useRef, useEffect} from 'react';
 import SignatureCanvas from 'react-signature-canvas'
+import Button from '../../../components/Button';
+
 
 export default function DrawingCanvas(){
   // useStates
@@ -61,16 +63,6 @@ export default function DrawingCanvas(){
     }
     setResultArray(sorted_array);
   }
-
-  const result_graph = (resultArray) => {
-    return(<div>
-      {resultArray.map((result, index) => (
-        <p key={index}>Number: {result[0]} <br/>Confidence: {result[1]}%</p>
-    ))}
-    </div>
-    )
-  }
-
   const processImage = (img) => {
     // Scale image
     const canvas =document.createElement('canvas');
@@ -140,6 +132,15 @@ export default function DrawingCanvas(){
     return [newImage, image_array];
   }
 
+  const result_graph = (resultArray) => {
+    return(<div>
+      {resultArray.map((result, index) => (
+        <p key={index}>Number: {result[0]} <br/>Confidence: {result[1]}%</p>
+    ))}
+    </div>
+    )
+  }
+
   return(
     <div>
       <SignatureCanvas
@@ -154,8 +155,8 @@ export default function DrawingCanvas(){
               className: 'signatureCanvas'
             }} />
       <div className="button-wrapper">
-        <button className="button" onClick={clearPad}>clear</button>
-        <button className="button" onClick={submitPad}>submit</button>
+        <Button className="button" onClick={clearPad} isClear="true">clear</Button>
+        <Button className="button" onClick={submitPad}>submit</Button>
       </div>
       {resultArray ? (
         <>
