@@ -1,0 +1,82 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/contact.js": 0,
+      "multi private-next-pages/designs.js": 1,
+      "multi private-next-pages/index.js": 2,
+      "multi private-next-pages/posts/AboutMePanel.js": 3,
+      "multi private-next-pages/posts/ContactPanel.js": 4,
+      "multi private-next-pages/posts/VoyPanel.js": 5,
+      "multi private-next-pages/projects.js": 6,
+      "multi private-next-pages/projects/components/DrawingCanvas.js": 7,
+      "multi private-next-pages/projects/components/ImageProcessor.js": 8,
+      "multi private-next-pages/projects/digit_recognizer.js": 9,
+      "multi next/dist/pages/_app": 10,
+      "multi next/dist/pages/_error": 11,
+      "multi next/dist/pages/_document": 12
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12
+    }
+  },
+  "chunks": {
+    "byName": {
+      "init-server.js": 0,
+      "on-error-server.js": 1,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/_app.js": 2,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/_document.js": 3,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/_error.js": 4,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/contact.js": 5,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/designs.js": 6,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/index.js": 7,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/posts/AboutMePanel.js": 8,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/posts/ContactPanel.js": 9,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/posts/VoyPanel.js": 10,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/projects.js": 11,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/projects/components/DrawingCanvas.js": 12,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/projects/components/ImageProcessor.js": 13,
+      "static/VqC1UHIK4BEVI3QLreVOt/pages/projects/digit_recognizer.js": 14,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/_app.js": 15,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/_document.js": 16,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/_error.js": 17,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/contact.js": 18,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/designs.js": 19,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/index.js": 20,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/posts/AboutMePanel.js": 21,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/posts/ContactPanel.js": 22,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/posts/VoyPanel.js": 23,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/projects.js": 24,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/projects/components/DrawingCanvas.js": 25,
+      "static/JMOk0Qzg8TU1qjlitrJTx/pages/projects/digit_recognizer.js": 26
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ]
+  }
+}

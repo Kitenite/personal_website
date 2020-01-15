@@ -1,36 +1,68 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_d6a88dbe3071bd165157.js",
-    "static/development/dll/dll_d6a88dbe3071bd165157.js.map"
-  ],
+  "devFiles": [],
   "pages": {
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
     ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
     ],
     "/_polyfills": [
-      "static/runtime/polyfills.js",
-      "static/runtime/polyfills.js.map"
+      "static/runtime/polyfills-d567577529c804765e74.js"
+    ],
+    "/contact": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
+    ],
+    "/designs": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
     ],
-    "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/posts/AboutMePanel": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
+    ],
+    "/posts/ContactPanel": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
+    ],
+    "/posts/VoyPanel": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
+    ],
+    "/projects": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
+    ],
+    "/projects/components/DrawingCanvas": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
     ],
     "/projects/digit_recognizer": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.264cf7296dac9b3fc4f4.js",
+      "static/runtime/main-1a174a0bd82938eb4d5e.js"
     ]
   }
 }
