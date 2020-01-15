@@ -4342,7 +4342,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/kietho/Repos/stuffbykiet.com/pages/projects/digit_recognizer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
@@ -4362,31 +4361,8 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return __jsx("div", {
-        className: "App",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        },
-        __self: this
-      }, __jsx("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7
-        },
-        __self: this
-      }, "Draw any digit from 0-9"), __jsx(_components_DrawingCanvas__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        },
-        __self: this
-      }), __jsx("style", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9
-        },
-        __self: this
-      }, "\n          .App{\n            text-align: center;\n          }\n          .button-wrapper{\n            padding-top: 5vh;\n          }\n          .signatureCanvas{\n            border: solid gray;\n          }\n          "));
+        className: "App"
+      }, __jsx("h1", null, "Draw any digit from 0-9"), __jsx(_components_DrawingCanvas__WEBPACK_IMPORTED_MODULE_6__["default"], null), __jsx("style", null, "\n          .App{\n            text-align: center;\n          }\n          .button-wrapper{\n            padding-top: 5vh;\n          }\n          .signatureCanvas{\n            border: solid gray;\n          }\n          "));
     }
   }]);
 
