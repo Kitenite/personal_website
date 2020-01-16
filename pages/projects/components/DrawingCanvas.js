@@ -161,7 +161,7 @@ export default function DrawingCanvas(){
 
       {imageURL ? (
         <>
-          <a>Processed Digit</a>
+          <p>Processed Digit</p>
           <img
             src={imageURL}
             alt="my signature"

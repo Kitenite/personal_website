@@ -11463,7 +11463,7 @@ function DrawingCanvas() {
   }, "clear"), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "button",
     onClick: submitPad
-  }, "submit")), resultArray ? __jsx("div", null, result_graph(resultArray)) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("a", null, "Processed Digit"), __jsx("img", {
+  }, "submit")), resultArray ? __jsx("div", null, result_graph(resultArray)) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("p", null, "Processed Digit"), __jsx("img", {
     src: imageURL,
     alt: "my signature",
     style: {
@@ -11497,30 +11497,30 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 function ResultGraph(props) {
   var resultArray = props.result ? props.result : [0, 0];
   return __jsx("div", {
-    className: "jsx-1580602796"
+    className: "jsx-1282830152"
   }, __jsx("p", {
-    className: "jsx-1580602796" + " " + "title"
+    className: "jsx-1282830152" + " " + "title"
   }, "Result"), __jsx("a", {
-    className: "jsx-1580602796" + " " + "final-answer"
+    className: "jsx-1282830152" + " " + "final-answer"
   }, "Final answer: ", resultArray[0][0]), __jsx("p", {
-    className: "jsx-1580602796" + " " + "title"
+    className: "jsx-1282830152" + " " + "title"
   }, "Confidence breakdown:"), resultArray.map(function (result, index) {
     return __jsx("div", {
-      className: "jsx-1580602796" + " " + "confidence-element"
+      className: "jsx-1282830152" + " " + "confidence-element"
     }, __jsx("div", {
       style: {
         backgroundColor: result[1] > 75 ? '#5DEBA4' : result[1] >= 50 ? '#FFCA41' : '#FF6868',
         height: result[1] ? result[1] * 2 : 0
       },
-      className: "jsx-1580602796" + " " + "bar"
+      className: "jsx-1282830152" + " " + "bar"
     }), __jsx("p", {
-      className: "jsx-1580602796"
-    }, result[0]), __jsx("p", {
-      className: "jsx-1580602796"
-    }, result[1], "%"));
+      className: "jsx-1282830152"
+    }, result[1], "%"), __jsx("p", {
+      className: "jsx-1282830152"
+    }, result[0]));
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1580602796"
-  }, ".title.jsx-1580602796{padding-bottom:0.1vh;font-size:3vh;-webkit-text-decoration:underline;text-decoration:underline;}.confidence-element.jsx-1580602796{padding:2vw;display:inline-block;layout:inline-flex;text-align:center;}.bar.jsx-1580602796{height:20vh;width:1vw;border-radius:2vw;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL3Byb2plY3RzL2NvbXBvbmVudHMvUmVzdWx0R3JhcGguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUJrQixBQUcrQixBQUtULEFBTUMsWUFMUyxBQU1YLFNBWEcsQ0FZSSxXQU5FLEVBTE8sS0FZNUIsWUFObUIsa0JBQ25CLHlCQU5BIiwiZmlsZSI6Ii9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL3Byb2plY3RzL2NvbXBvbmVudHMvUmVzdWx0R3JhcGguanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSZXN1bHRHcmFwaChwcm9wcyl7XG4gIGNvbnN0IHJlc3VsdEFycmF5ID0gKHByb3BzLnJlc3VsdCkgPyAocHJvcHMucmVzdWx0KSA6IFswLDBdXG4gIHJldHVybihcbiAgICA8ZGl2PlxuICAgICAgPHAgY2xhc3NOYW1lPVwidGl0bGVcIj5SZXN1bHQ8L3A+XG4gICAgICA8YSBjbGFzc05hbWU9XCJmaW5hbC1hbnN3ZXJcIj5GaW5hbCBhbnN3ZXI6IHtyZXN1bHRBcnJheVswXVswXX08L2E+XG4gICAgICA8cCBjbGFzc05hbWU9XCJ0aXRsZVwiPkNvbmZpZGVuY2UgYnJlYWtkb3duOjwvcD5cbiAgICAgIHtyZXN1bHRBcnJheS5tYXAoKHJlc3VsdCwgaW5kZXgpID0+IChcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb25maWRlbmNlLWVsZW1lbnRcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJhclwiIHN0eWxlPXt7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IChyZXN1bHRbMV0gPjc1KSA/ICcjNURFQkE0JyA6IChyZXN1bHRbMV0gPj01MCkgPycjRkZDQTQxJzonI0ZGNjg2OCcsXG4gICAgICAgICAgICBoZWlnaHQ6IChyZXN1bHRbMV0pID8gKHJlc3VsdFsxXSoyKSA6IDBcbiAgICAgICAgICB9fS8+XG4gICAgICAgICAgPHA+e3Jlc3VsdFswXX08L3A+XG4gICAgICAgICAgPHA+e3Jlc3VsdFsxXX0lPC9wPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICkpfVxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAudGl0bGV7XG4gICAgICAgICAgcGFkZGluZy1ib3R0b206MC4xdmg7XG4gICAgICAgICAgZm9udC1zaXplOjN2aDtcbiAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgICAgICAgfVxuICAgICAgICAuY29uZmlkZW5jZS1lbGVtZW50e1xuICAgICAgICAgIHBhZGRpbmc6MnZ3O1xuICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgICBsYXlvdXQ6IGlubGluZS1mbGV4O1xuICAgICAgICAgIHRleHQtYWxpZ246Y2VudGVyO1xuICAgICAgICB9XG4gICAgICAgIC5iYXJ7XG4gICAgICAgICAgaGVpZ2h0OiAyMHZoO1xuICAgICAgICAgIHdpZHRoOiAxdnc7XG4gICAgICAgICAgYm9yZGVyLXJhZGl1czoydnc7XG4gICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG59XG4iXX0= */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/pages/projects/components/ResultGraph.js */"));
+    id: "1282830152"
+  }, ".title.jsx-1282830152{padding-bottom:0.1vh;font-size:3vh;-webkit-text-decoration:underline;text-decoration:underline;}.final-answer.jsx-1282830152{font-size:2.5vh;}.confidence-element.jsx-1282830152{padding:2vw;display:inline-block;layout:inline-block;text-align:center;}@-webkit-keyframes growFromBottom-jsx-1282830152{0%{-webkit-transform:scaleY(0);-ms-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:bottom;-ms-transform-origin:bottom;transform-origin:bottom;}100%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:bottom;-ms-transform-origin:bottom;transform-origin:bottom;}}@keyframes growFromBottom-jsx-1282830152{0%{-webkit-transform:scaleY(0);-ms-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:bottom;-ms-transform-origin:bottom;transform-origin:bottom;}100%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:bottom;-ms-transform-origin:bottom;transform-origin:bottom;}}.bar.jsx-1282830152{margin:auto;height:20vh;width:1vw;border-radius:2vw;-webkit-animation:3s ease-out 0s 1 growFromBottom-jsx-1282830152;animation:3s ease-out 0s 1 growFromBottom-jsx-1282830152;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL3Byb2plY3RzL2NvbXBvbmVudHMvUmVzdWx0R3JhcGguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUJrQixBQUcrQixBQUtKLEFBR0wsQUFPVyxBQUlBLEFBS1YsWUFmUyxBQWdCVCxJQW5CZCxLQUxlLEdBeUJILFNBaEJVLENBaUJILENBekJTLGlCQTBCZ0IsQ0FqQnpCLGtCQUNuQixDQUtDLEFBRzJCLHVCQWpCNUIsNkRBY0UsQUFJQSxrQkFRRiIsImZpbGUiOiIvVXNlcnMva2lldGhvL1JlcG9zL3N0dWZmYnlraWV0LmNvbS9wYWdlcy9wcm9qZWN0cy9jb21wb25lbnRzL1Jlc3VsdEdyYXBoLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gUmVzdWx0R3JhcGgocHJvcHMpe1xuICBjb25zdCByZXN1bHRBcnJheSA9IChwcm9wcy5yZXN1bHQpID8gKHByb3BzLnJlc3VsdCkgOiBbMCwwXVxuICByZXR1cm4oXG4gICAgPGRpdj5cbiAgICAgIDxwIGNsYXNzTmFtZT1cInRpdGxlXCI+UmVzdWx0PC9wPlxuICAgICAgPGEgY2xhc3NOYW1lPVwiZmluYWwtYW5zd2VyXCI+RmluYWwgYW5zd2VyOiB7cmVzdWx0QXJyYXlbMF1bMF19PC9hPlxuICAgICAgPHAgY2xhc3NOYW1lPVwidGl0bGVcIj5Db25maWRlbmNlIGJyZWFrZG93bjo8L3A+XG4gICAgICB7cmVzdWx0QXJyYXkubWFwKChyZXN1bHQsIGluZGV4KSA9PiAoXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29uZmlkZW5jZS1lbGVtZW50XCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiYXJcIiBzdHlsZT17e1xuICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAocmVzdWx0WzFdID43NSkgPyAnIzVERUJBNCcgOiAocmVzdWx0WzFdID49NTApID8nI0ZGQ0E0MSc6JyNGRjY4NjgnLFxuICAgICAgICAgICAgaGVpZ2h0OiAocmVzdWx0WzFdKSA/IChyZXN1bHRbMV0qMikgOiAwXG4gICAgICAgICAgfX0vPlxuICAgICAgICAgIDxwPntyZXN1bHRbMV19JTwvcD5cbiAgICAgICAgICA8cD57cmVzdWx0WzBdfTwvcD5cbiAgICAgICAgPC9kaXY+XG4gICAgICApKX1cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgLnRpdGxle1xuICAgICAgICAgIHBhZGRpbmctYm90dG9tOjAuMXZoO1xuICAgICAgICAgIGZvbnQtc2l6ZTozdmg7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gICAgICAgIH1cbiAgICAgICAgLmZpbmFsLWFuc3dlcntcbiAgICAgICAgICBmb250LXNpemU6IDIuNXZoO1xuICAgICAgICB9XG4gICAgICAgIC5jb25maWRlbmNlLWVsZW1lbnR7XG4gICAgICAgICAgcGFkZGluZzoydnc7XG4gICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgICAgICAgIGxheW91dDogaW5saW5lLWJsb2NrO1xuICAgICAgICAgIHRleHQtYWxpZ246Y2VudGVyO1xuICAgICAgICB9XG4gICAgICAgIEBrZXlmcmFtZXMgZ3Jvd0Zyb21Cb3R0b20ge1xuICAgICAgICAgIDAlIHtcbiAgICAgICAgICAgIHRyYW5zZm9ybTogc2NhbGVZKDApO1xuICAgICAgICAgICAgdHJhbnNmb3JtLW9yaWdpbjogYm90dG9tXG4gICAgICAgICAgfVxuICAgICAgICAgIDEwMCUge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZVkoMSk7XG4gICAgICAgICAgICB0cmFuc2Zvcm0tb3JpZ2luOiBib3R0b207XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICAgIC5iYXJ7XG4gICAgICAgICAgbWFyZ2luOiBhdXRvO1xuICAgICAgICAgIGhlaWdodDogMjB2aDtcbiAgICAgICAgICB3aWR0aDogMXZ3O1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6MnZ3O1xuICAgICAgICAgIGFuaW1hdGlvbjogM3MgZWFzZS1vdXQgMHMgMSBncm93RnJvbUJvdHRvbTtcbiAgICAgICAgfVxuICAgICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gIClcbn1cbiJdfQ== */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/pages/projects/components/ResultGraph.js */"));
 }
 
 /***/ }),
@@ -11573,7 +11573,7 @@ function (_React$Component) {
         className: "title"
       }, "Draw any digit from 0-9"), __jsx("div", {
         className: "canvas-wrapper"
-      }, __jsx(_components_DrawingCanvas__WEBPACK_IMPORTED_MODULE_6__["default"], null)), __jsx("style", null, "\n            .Page{\n              text-align: center;\n            }\n            .button-wrapper{\n              padding: 5vh;\n            }\n            .canvas-wrapper{\n              font-weight : lighter;\n              padding-top: 5vh;\n            }\n            .signatureCanvas{\n              border: solid 1px;\n            }\n            .title{\n              font-weight : lighter;\n              font-size: 30px;\n              font-size: 4vh;\n            }\n            ")));
+      }, __jsx(_components_DrawingCanvas__WEBPACK_IMPORTED_MODULE_6__["default"], null)), __jsx("style", null, "\n            .Page{\n              padding-top:5vh;\n              text-align: center;\n            }\n            .button-wrapper{\n              padding: 5vh;\n            }\n            .canvas-wrapper{\n              font-weight : lighter;\n              padding-top: 5vh;\n            }\n            .signatureCanvas{\n              border: solid 1px;\n            }\n            .title{\n              font-weight : lighter;\n              font-size: 30px;\n              font-size: 4vh;\n            }\n            ")));
     }
   }]);
 

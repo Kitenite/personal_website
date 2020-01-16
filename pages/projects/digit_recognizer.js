@@ -13,6 +13,7 @@ class DigitRecognizer extends React.Component {
           </div>
           <style >{`
             .Page{
+              padding-top:5vh;
               text-align: center;
             }
             .button-wrapper{
