@@ -7,6 +7,8 @@ import ScrollPanel from '../components/ScrollPanel'
 // Content
 import AboutMePanel from './posts/AboutMePanel'
 import VoyPanel from './posts/VoyPanel'
+import DigitPanel from './posts/DigitPanel'
+
 
 export default function Blog() {
   return (
@@ -21,10 +23,8 @@ export default function Blog() {
         <VoyPanel/>
       </ScrollPanel>
 
-      <ScrollPanel title={<a><b>AI </b>Projects</a>}>
-      <Link href="/projects/digit_recognizer">
-        <a>Digit recognizer</a>
-      </Link>
+      <ScrollPanel title={<a><b>Handwriting </b>Classifier AI</a>}>
+        <DigitPanel/>
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>Hack</b>athon</a>}>

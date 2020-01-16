@@ -8,6 +8,7 @@ export default function DrawingCanvas(){
   // useStates
   const sigCanvas = useRef({});
   const [imageURL, setImageURL] = useState(null);
+  const [error, setError] = useState(false);
   const [resultArray, setResultArray] = useState(null);
   const [height, setHeight] = useState(null)
   const [width, setWidth] = useState(null)
@@ -41,9 +42,13 @@ export default function DrawingCanvas(){
     // get a callback when the server responds
     xhr.addEventListener('load', () => {
       // Get results and process
-      if (xhr.responseText){
+      console.log(xhr.response)
+      console.log(xhr.status)
+      if (xhr.status != 500){
         let reponse = JSON.parse(xhr.responseText);
         processResult(reponse)
+      } else{
+        setError(true)
       }
     });
     xhr.open('POST', model_url);
@@ -124,10 +129,6 @@ export default function DrawingCanvas(){
       final_row[i] = 0;
     }
     image_array[27] = final_row;
-
-    // Print out array
-    // console.log(image_array);
-
     cctx.putImageData(imgData, 0, 0);
     let newImage = canvas;
     return [newImage, image_array];
@@ -156,9 +157,10 @@ export default function DrawingCanvas(){
         <Button className="button" onClick={clearPad} isClear="true">clear</Button>
         <Button className="button" onClick={submitPad}>submit</Button>
       </div>
+      {error ? (<p>Something went wrong, please check your connection.</p>
+      ) : null}
       {resultArray ? (<div>{result_graph(resultArray)}</div>
       ) : null}
-
       {imageURL ? (
         <>
           <p>Processed Digit</p>

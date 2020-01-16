@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2351,6 +2351,10 @@ function DrawingCanvas() {
     1: setImageURL
   } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null);
   const {
+    0: error,
+    1: setError
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  const {
     0: resultArray,
     1: setResultArray
   } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null);
@@ -2389,9 +2393,14 @@ function DrawingCanvas() {
 
     xhr.addEventListener('load', () => {
       // Get results and process
-      if (xhr.responseText) {
+      console.log(xhr.response);
+      console.log(xhr.status);
+
+      if (xhr.status != 500) {
         let reponse = JSON.parse(xhr.responseText);
         processResult(reponse);
+      } else {
+        setError(true);
       }
     });
     xhr.open('POST', model_url);
@@ -2476,9 +2485,7 @@ function DrawingCanvas() {
       final_row[i] = 0;
     }
 
-    image_array[27] = final_row; // Print out array
-    // console.log(image_array);
-
+    image_array[27] = final_row;
     cctx.putImageData(imgData, 0, 0);
     let newImage = canvas;
     return [newImage, image_array];
@@ -2510,7 +2517,7 @@ function DrawingCanvas() {
   }, "clear"), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "button",
     onClick: submitPad
-  }, "submit")), resultArray ? __jsx("div", null, result_graph(resultArray)) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("p", null, "Processed Digit"), __jsx("img", {
+  }, "submit")), error ? __jsx("p", null, "Something went wrong, please check your connection.") : null, resultArray ? __jsx("div", null, result_graph(resultArray)) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("p", null, "Processed Digit"), __jsx("img", {
     src: imageURL,
     alt: "my signature",
     style: {
@@ -2625,7 +2632,7 @@ class DigitRecognizer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compo
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!**************************************************!*\
   !*** multi ./pages/projects/digit_recognizer.js ***!
   \**************************************************/

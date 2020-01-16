@@ -11296,17 +11296,21 @@ function DrawingCanvas() {
       imageURL = _useState[0],
       setImageURL = _useState[1];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(null),
-      resultArray = _useState2[0],
-      setResultArray = _useState2[1];
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(false),
+      error = _useState2[0],
+      setError = _useState2[1];
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(null),
-      height = _useState3[0],
-      setHeight = _useState3[1];
+      resultArray = _useState3[0],
+      setResultArray = _useState3[1];
 
   var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(null),
-      width = _useState4[0],
-      setWidth = _useState4[1]; // Canvas Configuration
+      height = _useState4[0],
+      setHeight = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(null),
+      width = _useState5[0],
+      setWidth = _useState5[1]; // Canvas Configuration
 
 
   if (true) {
@@ -11342,9 +11346,14 @@ function DrawingCanvas() {
 
     xhr.addEventListener('load', function () {
       // Get results and process
-      if (xhr.responseText) {
+      console.log(xhr.response);
+      console.log(xhr.status);
+
+      if (xhr.status != 500) {
         var reponse = JSON.parse(xhr.responseText);
         processResult(reponse);
+      } else {
+        setError(true);
       }
     });
     xhr.open('POST', model_url);
@@ -11429,9 +11438,7 @@ function DrawingCanvas() {
       final_row[i] = 0;
     }
 
-    image_array[27] = final_row; // Print out array
-    // console.log(image_array);
-
+    image_array[27] = final_row;
     cctx.putImageData(imgData, 0, 0);
     var newImage = canvas;
     return [newImage, image_array];
@@ -11463,7 +11470,7 @@ function DrawingCanvas() {
   }, "clear"), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "button",
     onClick: submitPad
-  }, "submit")), resultArray ? __jsx("div", null, result_graph(resultArray)) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("p", null, "Processed Digit"), __jsx("img", {
+  }, "submit")), error ? __jsx("p", null, "Something went wrong, please check your connection.") : null, resultArray ? __jsx("div", null, result_graph(resultArray)) : null, imageURL ? __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("p", null, "Processed Digit"), __jsx("img", {
     src: imageURL,
     alt: "my signature",
     style: {
@@ -11584,7 +11591,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects%2Fdigit_recognizer&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fprojects%2Fdigit_recognizer.js ***!
   \********************************************************************************************************************************************************************************/
@@ -11607,5 +11614,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=digit_recognizer.js.map
