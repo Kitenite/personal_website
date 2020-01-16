@@ -11,7 +11,7 @@ import DigitPanel from './posts/DigitPanel'
 
 export default function Blog() {
   return (
-    <Layout page_title="Stuff By Kiet">
+    <Layout page_title="Made By Kiet">
       <Title><a>kiet <b>Ho</b></a></Title>
 
       <ScrollPanel>
