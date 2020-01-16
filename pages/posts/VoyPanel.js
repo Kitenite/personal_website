@@ -6,7 +6,7 @@ function VoyPanel() {
     paddingTop:"10vh",
     marginLeft: "auto",
     marginRight: "auto",
-    maxMidth: "80vw",
+    maxWidth: "80vw",
     maxHeight:"70vh",
     cursor: "pointer"
   }
