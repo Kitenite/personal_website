@@ -1,5 +1,5 @@
 export default function ResultGraph(props){
-  const resultArray = props.result
+  const resultArray = (props.result) ? (props.result) : [0,0]
   return(
     <div>
       <p className="title">Result</p>
@@ -9,7 +9,7 @@ export default function ResultGraph(props){
         <div className="confidence-element">
           <div className="bar" style={{
             backgroundColor: (result[1] >75) ? '#5DEBA4' : (result[1] >=50) ?'#FFCA41':'#FF6868',
-            height: result[1]*2
+            height: (result[1]) ? (result[1]*2) : 0
           }}/>
           <p>{result[0]}</p>
           <p>{result[1]}%</p>

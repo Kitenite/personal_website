@@ -8,7 +8,7 @@ export default function DrawingCanvas(){
   // useStates
   const sigCanvas = useRef({});
   const [imageURL, setImageURL] = useState(null);
-  const [resultArray, setResultArray] = useState([[0,100],[1,50],[2,2]]);
+  const [resultArray, setResultArray] = useState(null);
   const [height, setHeight] = useState(null)
   const [width, setWidth] = useState(null)
   // Canvas Configuration
