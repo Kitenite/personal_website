@@ -4,6 +4,7 @@ import ScrollPanel from '../components/ScrollPanel'
 
 // Content
 import VoyPanel from './posts/VoyPanel'
+import DigitPanel from './posts/DigitPanel'
 
 export default function Blog() {
   return (
@@ -11,6 +12,10 @@ export default function Blog() {
       <Title>Projects</Title>
       <ScrollPanel title={<a><b>Voy</b> Audio Tour</a>}>
         <VoyPanel/>
+      </ScrollPanel>
+      
+      <ScrollPanel title={<a><b>Handwriting </b>Classifier AI</a>}>
+        <DigitPanel/>
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>More</b> To Come</a>}/>

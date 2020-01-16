@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/designs.js"],{
 
 /***/ "./components/FadeInSection.js":
 /*!*************************************!*\
@@ -5503,21 +5503,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Findex.js!./":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Findex.js ***!
-  \***************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdesigns&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fdesigns.js!./":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdesigns&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fdesigns.js ***!
+  \************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/designs", function() {
+      var mod = __webpack_require__(/*! ./pages/designs.js */ "./pages/designs.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage)
+        module.hot.accept(/*! ./pages/designs.js */ "./pages/designs.js", function() {
+          if(!next.router.components["/designs"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/designs.js */ "./pages/designs.js")
+          next.router.update("/designs", updatedPage)
         })
       }
       return mod
@@ -10530,291 +10530,44 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/designs.js":
+/*!**************************!*\
+  !*** ./pages/designs.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Title */ "./components/Title.js");
-/* harmony import */ var _components_ScrollPanel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ScrollPanel */ "./components/ScrollPanel.js");
-/* harmony import */ var _posts_AboutMePanel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts/AboutMePanel */ "./pages/posts/AboutMePanel.js");
-/* harmony import */ var _posts_VoyPanel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./posts/VoyPanel */ "./pages/posts/VoyPanel.js");
-/* harmony import */ var _posts_DigitPanel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./posts/DigitPanel */ "./pages/posts/DigitPanel.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Title */ "./components/Title.js");
+/* harmony import */ var _components_ScrollPanel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/ScrollPanel */ "./components/ScrollPanel.js");
 
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-// Components
-
-
- // Content
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 function Blog() {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    page_title: "Stuff By Kiet"
-  }, __jsx(_components_Title__WEBPACK_IMPORTED_MODULE_3__["default"], null, __jsx("a", {
-    className: "jsx-4158932565"
-  }, "kiet ", __jsx("b", {
-    className: "jsx-4158932565"
-  }, "Ho"))), __jsx(_components_ScrollPanel__WEBPACK_IMPORTED_MODULE_4__["default"], null, __jsx(_posts_AboutMePanel__WEBPACK_IMPORTED_MODULE_5__["default"], null)), __jsx(_components_ScrollPanel__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: __jsx("a", {
-      className: "jsx-4158932565"
-    }, __jsx("b", {
-      className: "jsx-4158932565"
-    }, "Voy "), "Audio Tour")
-  }, __jsx(_posts_VoyPanel__WEBPACK_IMPORTED_MODULE_6__["default"], null)), __jsx(_components_ScrollPanel__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: __jsx("a", {
-      className: "jsx-4158932565"
-    }, __jsx("b", {
-      className: "jsx-4158932565"
-    }, "Handwriting "), "Classifier AI")
-  }, __jsx(_posts_DigitPanel__WEBPACK_IMPORTED_MODULE_7__["default"], null)), __jsx(_components_ScrollPanel__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: __jsx("a", {
-      className: "jsx-4158932565"
-    }, __jsx("b", {
-      className: "jsx-4158932565"
-    }, "Hack"), "athon")
-  }), __jsx(_components_ScrollPanel__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: __jsx("a", {
-      className: "jsx-4158932565"
-    }, __jsx("b", {
-      className: "jsx-4158932565"
-    }, "More"), " To Come")
-  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "4158932565"
-  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlDbUIiLCJmaWxlIjoiL1VzZXJzL2tpZXRoby9SZXBvcy9zdHVmZmJ5a2lldC5jb20vcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBDb21wb25lbnRzXG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBvbmVudHMvTGF5b3V0JztcbmltcG9ydCBUaXRsZSBmcm9tICcuLi9jb21wb25lbnRzL1RpdGxlJ1xuaW1wb3J0IFNjcm9sbFBhbmVsIGZyb20gJy4uL2NvbXBvbmVudHMvU2Nyb2xsUGFuZWwnXG5cbi8vIENvbnRlbnRcbmltcG9ydCBBYm91dE1lUGFuZWwgZnJvbSAnLi9wb3N0cy9BYm91dE1lUGFuZWwnXG5pbXBvcnQgVm95UGFuZWwgZnJvbSAnLi9wb3N0cy9Wb3lQYW5lbCdcbmltcG9ydCBEaWdpdFBhbmVsIGZyb20gJy4vcG9zdHMvRGlnaXRQYW5lbCdcblxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBCbG9nKCkge1xuICByZXR1cm4gKFxuICAgIDxMYXlvdXQgcGFnZV90aXRsZT1cIlN0dWZmIEJ5IEtpZXRcIj5cbiAgICAgIDxUaXRsZT48YT5raWV0IDxiPkhvPC9iPjwvYT48L1RpdGxlPlxuXG4gICAgICA8U2Nyb2xsUGFuZWw+XG4gICAgICAgIDxBYm91dE1lUGFuZWwvPlxuICAgICAgPC9TY3JvbGxQYW5lbD5cblxuICAgICAgPFNjcm9sbFBhbmVsIHRpdGxlPXs8YT48Yj5Wb3kgPC9iPkF1ZGlvIFRvdXI8L2E+fT5cbiAgICAgICAgPFZveVBhbmVsLz5cbiAgICAgIDwvU2Nyb2xsUGFuZWw+XG5cbiAgICAgIDxTY3JvbGxQYW5lbCB0aXRsZT17PGE+PGI+SGFuZHdyaXRpbmcgPC9iPkNsYXNzaWZpZXIgQUk8L2E+fT5cbiAgICAgICAgPERpZ2l0UGFuZWwvPlxuICAgICAgPC9TY3JvbGxQYW5lbD5cblxuICAgICAgPFNjcm9sbFBhbmVsIHRpdGxlPXs8YT48Yj5IYWNrPC9iPmF0aG9uPC9hPn0+XG4gICAgICA8L1Njcm9sbFBhbmVsPlxuXG4gICAgICA8U2Nyb2xsUGFuZWwgdGl0bGU9ezxhPjxiPk1vcmU8L2I+IFRvIENvbWU8L2E+fS8+XG5cbiAgICAgIDxzdHlsZSBqc3g+IHtgXG5cbiAgICAgIGB9IDwvc3R5bGU+XG5cbiAgICA8L0xheW91dD5cbiAgKTtcbn1cbiJdfQ== */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/pages/index.js */"));
-}
-
-/***/ }),
-
-/***/ "./pages/posts/AboutMePanel.js":
-/*!*************************************!*\
-  !*** ./pages/posts/AboutMePanel.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/kietho/Repos/stuffbykiet.com/pages/posts/AboutMePanel.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function AboutMePanel() {
-  return __jsx("div", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("img", {
-    src: "../../static/AboutMe.png",
-    alt: "Photo of Kiet",
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), __jsx("div", {
-    className: "jsx-3143893886" + " " + "content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("a", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "business | cs | design"), __jsx("p", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "I came to the US at the age of 14 ", __jsx("b", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "from Vietnam")), __jsx("p", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "I am a ", __jsx("b", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "Business"), " double-major minoring in ", __jsx("b", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "Computer Science"), " and ", __jsx("b", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "Design")), __jsx("p", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "I am ", __jsx("b", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "self-taught"), " in English, Programming and Entreprenuership"), __jsx("p", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Most of all, I like to ", __jsx("b", {
-    className: "jsx-3143893886",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "make stuff"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3143893886",
-    __self: this
-  }, ".jsx-3143893886{display:inline-block;}img.jsx-3143893886{padding-top:10vh;float:left;padding-left:10vw;height:45vh;}.content.jsx-3143893886{float:left;display:block;padding-top:15vh;padding-left:5vw;}a.jsx-3143893886{font-size:4.5vh;}p.jsx-3143893886{padding-top:2vh;display:block;word-break:break-word;font-size:2.5vh;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raWV0aG8vUmVwb3Mvc3R1ZmZieWtpZXQuY29tL3BhZ2VzL3Bvc3RzL0Fib3V0TWVQYW5lbC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFha0IsQUFFOEIsQUFFRixBQU1OLEFBTUssQUFHQSxXQVJGLEtBTWhCLEFBR2dCLENBZkgsSUFvQmIsSUFibUIsR0FOQyxFQWVJLFlBUkwsSUFOTCxNQWVJLE1BZGxCLENBTUEsU0FTQSIsImZpbGUiOiIvVXNlcnMva2lldGhvL1JlcG9zL3N0dWZmYnlraWV0LmNvbS9wYWdlcy9wb3N0cy9BYm91dE1lUGFuZWwuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmZ1bmN0aW9uIEFib3V0TWVQYW5lbCgpIHtcbiAgcmV0dXJuKFxuICAgPGRpdj5cbiAgICAgIDxpbWcgc3JjPXtcIi4uLy4uL3N0YXRpYy9BYm91dE1lLnBuZ1wifSBhbHQ9XCJQaG90byBvZiBLaWV0XCIvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50XCIgPlxuICAgICAgICA8YT5idXNpbmVzcyB8IGNzIHwgZGVzaWduPC9hPlxuICAgICAgICA8cD5JIGNhbWUgdG8gdGhlIFVTIGF0IHRoZSBhZ2Ugb2YgMTQgPGI+ZnJvbSBWaWV0bmFtPC9iPjwvcD5cbiAgICAgICAgPHA+SSBhbSBhIDxiPkJ1c2luZXNzPC9iPiBkb3VibGUtbWFqb3IgbWlub3JpbmcgaW4gPGI+Q29tcHV0ZXIgU2NpZW5jZTwvYj4gYW5kIDxiPkRlc2lnbjwvYj48L3A+XG4gICAgICAgIDxwPkkgYW0gPGI+c2VsZi10YXVnaHQ8L2I+IGluIEVuZ2xpc2gsIFByb2dyYW1taW5nIGFuZCBFbnRyZXByZW51ZXJzaGlwPC9wPlxuICAgICAgICA8cD5Nb3N0IG9mIGFsbCwgSSBsaWtlIHRvIDxiPm1ha2Ugc3R1ZmY8L2I+PC9wPlxuXG4gICAgICA8L2Rpdj5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgICAgICBpbWd7XG4gICAgICAgICAgcGFkZGluZy10b3A6IDEwdmg7XG4gICAgICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICAgICAgcGFkZGluZy1sZWZ0OiAxMHZ3O1xuICAgICAgICAgIGhlaWdodDogNDV2aDtcbiAgICAgICAgfVxuICAgICAgICAuY29udGVudHtcbiAgICAgICAgICBmbG9hdDogbGVmdDtcbiAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICBwYWRkaW5nLXRvcDogMTV2aDtcbiAgICAgICAgICBwYWRkaW5nLWxlZnQ6IDV2dztcbiAgICAgICAgfVxuICAgICAgICBhe1xuICAgICAgICAgIGZvbnQtc2l6ZTogNC41dmg7XG4gICAgICAgIH1cbiAgICAgICAgcHtcbiAgICAgICAgICBwYWRkaW5nLXRvcDogMnZoO1xuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XG4gICAgICAgICAgZm9udC1zaXplOiAyLjV2aDtcbiAgICAgICAgfVxuXG4gICAgICAgIGB9XG4gICAgICA8L3N0eWxlPlxuICAgPC9kaXY+XG4gKVxufVxuZXhwb3J0IGRlZmF1bHQgQWJvdXRNZVBhbmVsXG4iXX0= */\n/*@ sourceURL=/Users/kietho/Repos/stuffbykiet.com/pages/posts/AboutMePanel.js */"));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (AboutMePanel);
-
-/***/ }),
-
-/***/ "./pages/posts/DigitPanel.js":
-/*!***********************************!*\
-  !*** ./pages/posts/DigitPanel.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DigitPanel; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function DigitPanel() {
-  var style = {
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "auto",
-    marginTop: "auto",
-    marginBottom: "auto",
-    maxWidth: "100vw",
-    maxHeight: "80vh",
-    cursor: "pointer"
-  };
-  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/projects/digit_recognizer"
-  }, __jsx("img", {
-    src: "../../static/DigitRecognizer.png",
-    alt: "Preview of AI project",
-    style: style
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    page_title: "Designs By Kiet"
+  }, __jsx(_components_Title__WEBPACK_IMPORTED_MODULE_2__["default"], null, "Designs"), __jsx(_components_ScrollPanel__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: __jsx("a", null, __jsx("b", null, "More"), " To Come")
   }));
 }
 
 /***/ }),
 
-/***/ "./pages/posts/VoyPanel.js":
-/*!*********************************!*\
-  !*** ./pages/posts/VoyPanel.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function VoyPanel() {
-  var style = {
-    display: "block",
-    paddingTop: "10vh",
-    marginLeft: "auto",
-    marginRight: "auto",
-    maxMidth: "80vw",
-    maxHeight: "70vh",
-    cursor: "pointer"
-  };
-  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/projects"
-  }, __jsx("img", {
-    src: "../../static/VoyPanel.png",
-    alt: "Voy Phone Preview",
-    style: style
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (VoyPanel);
-
-/***/ }),
-
-/***/ 0:
-/*!*******************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Findex.js ***!
-  \*******************************************************************************************************************************/
+/***/ 2:
+/*!****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fdesigns&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fdesigns.js ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdesigns&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fdesigns.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdesigns&absolutePagePath=%2FUsers%2Fkietho%2FRepos%2Fstuffbykiet.com%2Fpages%2Fdesigns.js!./");
 
 
 /***/ }),
@@ -10830,5 +10583,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=designs.js.map

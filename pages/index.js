@@ -1,5 +1,4 @@
 // Components
-import Link from 'next/link';
 import Layout from '../components/Layout';
 import Title from '../components/Title'
 import ScrollPanel from '../components/ScrollPanel'
