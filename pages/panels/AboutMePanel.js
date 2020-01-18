@@ -9,7 +9,6 @@ function AboutMePanel() {
         <p>I am a <b>Business</b> double-major minoring in <b>Computer Science</b> and <b>Design</b></p>
         <p>I am <b>self-taught</b> in English, Programming and Entreprenuership</p>
         <p>Most of all, I like to <b>make stuff</b></p>
-
       </div>
       <style jsx>{`
         display: inline-block;
@@ -18,6 +17,8 @@ function AboutMePanel() {
           float: left;
           padding-left: 10vw;
           height: 45vh;
+          max-width: 80vw;
+          max-height:80vh;
         }
         .content{
           float: left;
