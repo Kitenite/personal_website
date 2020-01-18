@@ -16,7 +16,7 @@ function AboutMePanel() {
           padding-top: 10vh;
           float: left;
           padding-left: 10vw;
-          height: 45vh;
+          height: auto;
           max-width: 80vw;
           max-height:80vh;
         }
