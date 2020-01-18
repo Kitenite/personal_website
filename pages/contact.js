@@ -2,7 +2,7 @@ import Layout from '../components/Layout.js'
 import Title from '../components/Title'
 import ScrollPanel from '../components/ScrollPanel'
 
-import ContactPanel from './posts/ContactPanel'
+import ContactPanel from './panels/ContactPanel'
 
 export default function Contact() {
   return (

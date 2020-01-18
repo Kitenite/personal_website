@@ -16,7 +16,6 @@ const ScrollPanel = props => (
         }
         .title {
           font-weight : lighter;
-          font-size: 30px;
           font-size: 4vh;
           padding-left: 2vw;
         }

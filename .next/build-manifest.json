@@ -1,78 +1,28 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_d6a88dbe3071bd165157.js",
+    "static/development/dll/dll_d6a88dbe3071bd165157.js.map"
+  ],
   "pages": {
-    "/": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_polyfills": [
-      "static/runtime/polyfills-a591b2980a0968e30eae.js"
+      "static/runtime/polyfills.js",
+      "static/runtime/polyfills.js.map"
     ],
-    "/contact": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/designs": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/posts/AboutMePanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/posts/ContactPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/posts/DigitPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/posts/VoyPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/projects": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/projects/components/DrawingCanvas": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
-    ],
-    "/projects/components/ResultGraph": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
+    "/posts/digit_blog": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/projects/digit_recognizer": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.5bc4c6f2e65040b3ccbc.js",
-      "static/runtime/main-eb0adadbafe721ef91d2.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

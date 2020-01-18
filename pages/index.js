@@ -4,12 +4,12 @@ import Title from '../components/Title'
 import ScrollPanel from '../components/ScrollPanel'
 
 // Content
-import AboutMePanel from './posts/AboutMePanel'
-import VoyPanel from './posts/VoyPanel'
-import DigitPanel from './posts/DigitPanel'
+import AboutMePanel from './panels/AboutMePanel'
+import VoyPanel from './panels/VoyPanel'
+import DigitPanel from './panels/DigitPanel'
 
 
-export default function Blog() {
+export default function Index() {
   return (
     <Layout page_title="Made By Kiet">
       <Title><a>kiet <b>Ho</b></a></Title>

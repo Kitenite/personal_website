@@ -1,6 +1,6 @@
 import DrawingCanvas from './components/DrawingCanvas'
 import Layout from '../../components/Layout';
-
+import Link from 'next/link';
 
 class DigitRecognizer extends React.Component {
   render(){
@@ -11,6 +11,8 @@ class DigitRecognizer extends React.Component {
           <div className="canvas-wrapper">
             <DrawingCanvas/>
           </div>
+          <br/>
+          <Link href="/posts/digit_blog">View project blog</Link>
           <style >{`
             .Page{
               padding-top:5vh;

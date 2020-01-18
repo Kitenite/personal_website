@@ -5,6 +5,9 @@ export default function Button(props) {
       <a className="title">{props.children}</a>
       <div className="button-clear"/>
       <style jsx>{`
+        cursor: pointer;
+        font-weight:lighter;
+        min-width: 10vw;
         .clear-button{
           background: white;
           border-radius: 25px;
@@ -20,7 +23,6 @@ export default function Button(props) {
           color:white
         }
         .title{
-          padding: 2vh;
           font-size: 3vh;
         }
         `}</style>
