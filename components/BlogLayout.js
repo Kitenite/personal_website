@@ -10,6 +10,7 @@ export default function BlogLayout(props){
         }
         .wrapper{
           font-weight:lighter;
+          line-height: 3.5vh;
           font-size: 2.5vh;
           margin: 0vw 10vw 10vw 10vw;
         }
@@ -26,10 +27,26 @@ export default function BlogLayout(props){
           text-align: center;
         }
         .header{
-          font-size: 3vh;
+          font-size: 4vh;
           font-weight : bold;
         }
 
+        .sub-header{
+          font-size: 3vh;
+          font-weight : medium;
+        }
+        .video-wrapper{
+          width: 70vw;
+          height: 70vh;
+          margin: 0 auto;
+          max-width: 70vw;
+          max-height: 70vh;
+        }
+        iframe{
+          position: relative;
+          height: 100%;
+          width: 100%;
+        }
         `}</style>
     </Layout>
   )

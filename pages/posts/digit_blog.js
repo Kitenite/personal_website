@@ -48,14 +48,14 @@ export default function DigitBlog() {
         For building and training the model, I used Tensorflow. In my opinion, it’s a very beginner-friendly tool for people like me without a ton of data science experience.
         <br/>
         <br/>
-        <img src={"../static/blog/tensorflow-logo.png"} alt="Tensorflow logo" ></img>
+        <img src={"../static/blog/digit/tensorflow-logo.png"} alt="Tensorflow logo" ></img>
         <a href="https://www.tensorflow.org/learn" target="_blank">https://www.tensorflow.org/learn</a><br/>
         <br/>
         <br/>
         Instead of having to manually build out your own model, Tensorflow allows for a level of abstraction by letting you simply input what the shape of your model is. An example model creation can be seen below with the bolded part being customizable.
         <br/>
         <br/>
-        <img src={"../static/blog/tensorflow-code.png"} alt="Tensorflow code" style={{maxHeight:"20vh"}}></img>
+        <img src={"../static/blog/digit/tensorflow-code.png"} alt="Tensorflow code" style={{maxHeight:"20vh"}}></img>
         <br/>
         <br/>
         In this case I am creating a model with 1 hidden layer, an input layer that takes in a matrix of 28x28 and outputs 10 different classification. We can see why in a little bit.
@@ -74,7 +74,7 @@ export default function DigitBlog() {
         <br/>
         We can see from the image description that the images are formatted by 28x28 matrix of pixels, which is why we’d want our input to be 28 by 28. Next, all we needed to do was load and run the model. The test output gives us an accuracy of 88%, which is good enough for the amount of data and training we had.<br/>
         <br/>
-        <img src={"../static/blog/accuracy.png"} alt="Test accuracy"/>
+        <img src={"../static/blog/digit/accuracy.png"} alt="Test accuracy"/>
         <br/>
         <br/>
         <a className="header">The client</a>
@@ -82,7 +82,7 @@ export default function DigitBlog() {
         <br/>
         For the client, I used React.js to create my own client. I learned through playing around with their Tic-tac-toe tutorial and created my own drawing pad using actual simulated pixels which can be found here:
         <br/>
-        <img src={"../static/blog/react-logo.png"} alt="React logo"/>
+        <img src={"../static/blog/digit/react-logo.png"} alt="React logo"/>
         <br/>
         Pixel board:
         <a href="https://github.com/Kitenite/pixel_board" target="_blank"> https://github.com/Kitenite/pixel_board</a><br/>
@@ -93,7 +93,7 @@ export default function DigitBlog() {
         <br/>
         After I’ve gotten comfortable with React, I continued by implementing a simple drawing pad.
         <br/>
-        <img src={"../static/blog/drawing-pad.png"} alt="Drawing pad"/>
+        <img src={"../static/blog/digit/drawing-pad.png"} alt="Drawing pad"/>
         <br/>
         The problem is the drawings created will be so different from the input sizes of tensorflow so I need to size the images according to the MNIST dataset specifications. The code for this is here:
         <br/>
@@ -104,13 +104,13 @@ export default function DigitBlog() {
         The resizing involed compressing the image to 20x20, put 8px buffer our the image to center it by weight, convert it to black and white and invert that color. Here is the side-by-side comparison.
         <br/>
         <br/>
-        <img src={"../static/blog/side-by-side.png"} alt="Comparison of processed image and MNIST image"/>
+        <img src={"../static/blog/digit/side-by-side.png"} alt="Comparison of processed image and MNIST image"/>
         <br/>
         <br/>
         Pretty good. Conversely, we can also train the model on a larger set of images of different ranges which makes for a much more versatile model. But that’s another project for another day. We’ll save this image and feed it to the client.
         <br/>
         <br/>
-        <img src={"../static/blog/image-result.png"} alt="Image result"/>
+        <img src={"../static/blog/digit/image-result.png"} alt="Image result"/>
         <br/>
         <br/>
         It works!
@@ -128,20 +128,20 @@ export default function DigitBlog() {
         I also had to learn how docker work and so here’s the link for that.
         <br/>
         <br/>
-        <img src={"../static/blog/docker-logo.png"} alt="Docker logo"/>
+        <img src={"../static/blog/digit/docker-logo.png"} alt="Docker logo"/>
         <a href="https://docs.docker.com/get-started/" target="_blank">https://docs.docker.com/get-started/</a><br/>
         <br/>
         <br/>
         So after we’ve familiarized ourselves with Docker, we want to pull the tensorflow Docker image. Let’s try to run it in our localhost.
         <br/>
         <br/>
-        <img src={"../static/blog/docker-test.png"} alt="Docker test"/>
+        <img src={"../static/blog/digit/docker-test.png"} alt="Docker test"/>
         <br/>
         <br/>
         Awesome. Now we use the client REST api to talk to our container.
         <br/>
         <br/>
-        <img src={"../static/blog/REST-test.png"} alt="REST API test"/>
+        <img src={"../static/blog/digit/REST-test.png"} alt="REST API test"/>
         <br/>
         <br/>
         Perfect. Now that our client and server talking, we can work on deploying our server.
@@ -153,14 +153,14 @@ export default function DigitBlog() {
         I decided to host my Docker server on AWS because I’ve done work with a cloud engineer before and have always wanted to learn more about AWS. I used the EC2 service here.
         <br/>
         <br/>
-        <img src={"../static/blog/EC2-logo.png"} alt="AWS EC2 logo"/>
+        <img src={"../static/blog/digit/EC2-logo.png"} alt="AWS EC2 logo"/>
         <a href="https://docs.aws.amazon.com/ec2/index.html" target="_blank">https://docs.aws.amazon.com/ec2/index.html</a><br/>
         <br/>
         <br/>
         Following the guide, I spun up a LINUX instance and ported my Docker image there. The API can now be reached at our public IP for any to access. Now all I had to do was pretty the app up with some Sketch, hook our app up to our favorite hosting site, Heroku, and watch the magic.
         <br/>
         <br/>
-        <img src={"../static/blog/app-screenshot.png"} alt="App screenshot"/>
+        <img src={"../static/blog/digit/app-screenshot.png"} alt="App screenshot"/>
         <a href="https://madebykiet.com/projects/digit_recognizer" target="_blank">https://madebykiet.com/projects/digit_recognizer</a><br/>
         <br/>
         <br/>

@@ -11,7 +11,7 @@ function VoyPanel() {
     cursor: "pointer"
   }
   return(
-    <Link href="/projects">
+    <Link href="/posts/voy_blog">
       <img src={"../../static/VoyPanel.png"} alt="Voy Phone Preview" style={style}></img>
     </Link>
   )
