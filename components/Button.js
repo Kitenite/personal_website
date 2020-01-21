@@ -1,22 +1,24 @@
 export default function Button(props) {
   const isClear = props.isClear
   return(
-    <button onClick={props.onClick} className={isClear ? "clear-button" : "black-button"}>
+    <button onClick={props.onClick} className={isClear ? "button clear" : "button black"}>
       <a className="title">{props.children}</a>
       <div className="button-clear"/>
       <style jsx>{`
         cursor: pointer;
         font-weight:lighter;
         min-width: 10vw;
-        .clear-button{
-          background: white;
+        .button{
           border-radius: 25px;
+        }
+        .button.clear{
+          background: white;
           border-style: solid;
           border-width: 1px;
           border-color: black;
           color:black
         }
-        .black-button{
+        .button.black{
           background: black;
           border-radius: 25px;
           border-width: 0px;
