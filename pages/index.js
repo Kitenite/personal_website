@@ -7,6 +7,7 @@ import ScrollPanel from '../components/ScrollPanel'
 import AboutMePanel from './panels/AboutMePanel'
 import VoyPanel from './panels/VoyPanel'
 import DigitPanel from './panels/DigitPanel'
+import DesignPanel from './panels/DesignPanel'
 
 
 export default function Index() {
@@ -24,6 +25,10 @@ export default function Index() {
 
       <ScrollPanel title={<a><b>Handwriting </b>Classifier AI</a>}>
         <DigitPanel/>
+      </ScrollPanel>
+
+      <ScrollPanel title={<a><b>Design </b>Projects</a>}>
+        <DesignPanel/>
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>Hack</b>athon</a>}>

@@ -10,7 +10,6 @@ const imgs = [
   "../../art/24-min.jpg",
   "../../art/25-min.jpg",
   "../../art/26-min.jpg"
-
 ];
 
 export default function ArtPanel(){
