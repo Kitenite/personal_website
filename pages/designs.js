@@ -19,11 +19,6 @@ export default function Blog() {
         <DesignPanel/>
       </ScrollPanel>
 
-      <ScrollPanel title={<a><b>Achievement</b> Icons</a>}>
-        <AchievementPanel/>
-      </ScrollPanel>
-
-
       <ScrollPanel title={<a><b>Black</b> and White</a>}>
         <BlackAndWhitePanel/>
       </ScrollPanel>
@@ -32,6 +27,9 @@ export default function Blog() {
         <ColoredPanel/>
       </ScrollPanel>
 
+      <ScrollPanel title={<a><b>Achievement</b> Icons</a>}>
+        <AchievementPanel/>
+      </ScrollPanel>
 
       <ScrollPanel title={<a><b>More</b> To Come</a>}/>
     </Layout>
