@@ -11,7 +11,7 @@ export default function DigitBlog() {
         </a>
       </div>
       <p className = "content-body">
-        <img src={"../static/VoyPanel.png"} alt="Voy app screenshot"/>
+        <img src={"../general/VoyPanel.png"} alt="Voy app screenshot"/>
         <a className="header">Introduction</a>
         <br/>
         <br/>
@@ -29,7 +29,7 @@ export default function DigitBlog() {
         This blog is a summary of the project, involving front-end technology, design choices, and our accomplishments.
         <br/>
         <br/>
-        <img src={"../static/blog/voy/map.png"} alt="App screenshot"/>
+        <img src={"../blog/voy/map.png"} alt="App screenshot"/>
         <br/>
         <br/>
         <a className="header">The Product</a>
@@ -41,7 +41,7 @@ export default function DigitBlog() {
         The product involves a map component, an audio player, a creation tool and a user/authentication system.
         <br/>
         <br/>
-        <img src={"../static/blog/voy/find.png"} alt="App screenshot"/>
+        <img src={"../blog/voy/find.png"} alt="App screenshot"/>
         <br/>
         <br/>
         <a className="sub-header">Map</a>
@@ -53,7 +53,7 @@ export default function DigitBlog() {
         The tour is attached to a tour ID that we can use to make other API calls to vote for the tour or find any other metadata associated with it. Attached to the tour is also a link to query our tour audio file from our S3 bucket to display in the media player.
         <br/>
         <br/>
-        <img src={"../static/blog/voy/audio.png"} alt="App screenshot"/>
+        <img src={"../blog/voy/audio.png"} alt="App screenshot"/>
         <br/>
         <br/>
         <a className="sub-header">Audio Player</a>
@@ -62,7 +62,7 @@ export default function DigitBlog() {
         The player queries our audio files, manages queues, history and checkpoints. The checkpoints corresponds with user location to know where a user should be on the tour and handle audio events accordingly. These audio events can be specified in the creation of the audio tour.
         <br/>
         <br/>
-        <img src={"../static/blog/voy/add.png"} alt="App screenshot"/>
+        <img src={"../blog/voy/add.png"} alt="App screenshot"/>
         <br/>
         <br/>
         <a className="sub-header">Creation Tool</a>
@@ -74,7 +74,7 @@ export default function DigitBlog() {
         After a user finishes creating their audio file, they can edit any part of the route and starting point or use the default. User can then input metadata as they need and hit publish. This uploads the audio to our S3 server using AWS Amplify, receive the link back and make a POST request to our create API with the uploaded tour information. The tour would be immediately available to the public at that location and can be edited or change using our edit API calls.
         <br/>
         <br/>
-        <img src={"../static/blog/voy/signin.png"} alt="App screenshot"/>
+        <img src={"../blog/voy/signin.png"} alt="App screenshot"/>
         <br/>
         <br/>
         <a className="sub-header">User and Authentication</a>
@@ -114,7 +114,7 @@ export default function DigitBlog() {
           <a className="sub-header">Minnedemo: </a>
           <br/>
           <br/>
-          <img src={"../static/blog/voy/minnedemo-logo.png"} alt="Minnedemo logo"/>
+          <img src={"../blog/voy/minnedemo-logo.png"} alt="Minnedemo logo"/>
           <br/>
         </a>
         <br/>
@@ -125,7 +125,7 @@ export default function DigitBlog() {
           <a className="sub-header">U-Spatial Mapping Award: </a>
           <br/>
           <br/>
-          <img src={"../static/blog/voy/u-spatial-logo.png"} alt="U-spatial logo"/>
+          <img src={"../blog/voy/u-spatial-logo.png"} alt="U-spatial logo"/>
           <br/>
         </a>
         <br/>
@@ -136,21 +136,21 @@ export default function DigitBlog() {
           <a className="sub-header">Minnesota Daily: </a>
           <br/>
           <br/>
-          <img src={"../static/blog/voy/mn-daily-logo.png"} alt="MN Daily logo"/>
+          <img src={"../blog/voy/mn-daily-logo.png"} alt="MN Daily logo"/>
           <br/>
         </a>
         <br/>
         <a href="https://www.glennelson.org/news/thevoyapp" target="_blank">
           <a className="sub-header">Glen Nelson Center:</a>
           <br/>
-          <img src={"../static/blog/voy/gnc-logo.png"} alt="Glen Nelson Center logo"/>
+          <img src={"../blog/voy/gnc-logo.png"} alt="Glen Nelson Center logo"/>
         </a>
         <br/>
         <br/>
         <a href="https://www.twincities.com/2019/07/06/american-public-medias-glen-nelson-center-seeds-28-media-technology-start-ups-from-downtown-st-paul/" target="_blank">
           <a className="sub-header">Twin Cities Pioneer Press:</a>
           <br/>
-          <img src={"../static/blog/voy/tc-logo.png"} alt="Twin Cities Pioneer Press logo"/>
+          <img src={"../blog/voy/tc-logo.png"} alt="Twin Cities Pioneer Press logo"/>
         </a>
         <br/>
         <br/>

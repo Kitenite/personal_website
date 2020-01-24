@@ -12,7 +12,7 @@ function VoyPanel() {
   }
   return(
     <Link href="/posts/voy_blog">
-      <img src={"../../static/VoyPanel.png"} alt="Voy Phone Preview" style={style}></img>
+      <img src={"../../general/VoyPanel.png"} alt="Voy Phone Preview" style={style}></img>
     </Link>
   )
 }

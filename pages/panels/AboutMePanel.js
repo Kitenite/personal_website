@@ -2,7 +2,7 @@
 function AboutMePanel() {
   return(
    <div>
-      <img src={"../../static/AboutMe.png"} alt="Photo of Kiet"/>
+      <img src={"../../general/AboutMe.png"} alt="Photo of Kiet"/>
       <div className="content" >
         <a>business | cs | design</a>
         <p>I came to the US at the age of 14 <b>from Vietnam</b></p>

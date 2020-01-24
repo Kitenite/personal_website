@@ -13,7 +13,7 @@ export default function DigitPanel(){
   }
   return(
     <Link href="/projects/digit_recognizer">
-        <img src={"../../static/DigitRecognizer.png"} alt="Preview of AI project" style={style}></img>
+        <img src={"../../general/DigitRecognizer.png"} alt="Preview of AI project" style={style}></img>
     </Link>
   )
 }

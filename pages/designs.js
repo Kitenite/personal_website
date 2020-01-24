@@ -3,7 +3,9 @@ import Title from '../components/Title'
 import ScrollPanel from '../components/ScrollPanel'
 
 // content
-import ArtPanel from './panels/ArtPanel'
+import BlackAndWhitePanel from './panels/BlackAndWhitePanel'
+import ColoredPanel from './panels/ColoredPanel'
+
 
 
 export default function Blog() {
@@ -11,8 +13,12 @@ export default function Blog() {
     <Layout page_title="Designs By Kiet">
       <Title>Designs</Title>
 
-      <ScrollPanel title={<a><b>Art</b> Projects</a>}>
-        <ArtPanel/>
+      <ScrollPanel title={<a><b>Black</b> and White</a>}>
+        <BlackAndWhitePanel/>
+      </ScrollPanel>
+
+      <ScrollPanel title={<a><b>Paint</b> and Canvas</a>}>
+        <ColoredPanel/>
       </ScrollPanel>
 
 
