@@ -8,7 +8,7 @@ import AboutMePanel from './panels/AboutMePanel'
 import VoyPanel from './panels/VoyPanel'
 import DigitPanel from './panels/DigitPanel'
 import DesignPanel from './panels/DesignPanel'
-import MinnehackPanel from './panels/MinnehackPanel'
+import MinnehackPanel from './panels/MinneHackPanel'
 
 export default function Index() {
   return (
