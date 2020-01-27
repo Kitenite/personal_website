@@ -8,7 +8,6 @@ import AboutMePanel from './panels/AboutMePanel'
 import VoyPanel from './panels/VoyPanel'
 import DigitPanel from './panels/DigitPanel'
 import DesignPanel from './panels/DesignPanel'
-import MinnehackPanel from './panels/MinnehackPanel'
 
 
 
@@ -34,7 +33,6 @@ export default function Index() {
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>Minne</b>Hack</a>}>
-        <MinnehackPanel/>
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>More</b> To Come</a>}/>
