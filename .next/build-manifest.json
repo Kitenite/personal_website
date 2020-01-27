@@ -1,117 +1,32 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_d6a88dbe3071bd165157.js",
+    "static/development/dll/dll_d6a88dbe3071bd165157.js.map"
+  ],
   "pages": {
     "/": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_app": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_polyfills": [
-      "static/runtime/polyfills-86d4a4fe5292bd05d3dc.js"
-    ],
-    "/contact": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/designs": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
+      "static/runtime/polyfills.js",
+      "static/runtime/polyfills.js.map"
     ],
     "/index": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/AboutMePanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/AchievementPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/BlackAndWhitePanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/ColoredPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/ContactPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/DesignPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/DigitPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/MinnehackPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/panels/VoyPanel": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/posts/digit_blog": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/posts/minnehack_blog": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/posts/voy_blog": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/projects": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/projects/components/DrawingCanvas": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/projects/components/ResultGraph": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
-    ],
-    "/projects/digit_recognizer": [
-      "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.463b14b0512b34db1b89.js",
-      "static/runtime/main-c77cbd9d29488dae0061.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }
