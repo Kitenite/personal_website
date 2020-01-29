@@ -31,7 +31,7 @@ export default function Index() {
         <DesignPanel/>
       </ScrollPanel>
 
-      <ScrollPanel title={<a><b>Minne</b>Hack</a>}>
+      <ScrollPanel title={<a><b>Hack</b>athon</a>}>
         <MinnehackPanel/>
       </ScrollPanel>
 
