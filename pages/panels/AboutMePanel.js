@@ -6,9 +6,9 @@ function AboutMePanel() {
       <div className="content" >
         <a>business | cs | design</a>
         <p>I came to the US at the age of 14 <b>from Vietnam</b></p>
-        <p>I am a <b>Business</b> double-major minoring in <b>Computer Science</b> and <b>Design</b></p>
+        <p>I am majoring in <b>Business</b> and <b> Computer Science</b>, minoring in <b>Design</b></p>
         <p>I am <b>self-taught</b> in English, Programming and Entreprenuership</p>
-        <p>Most of all, I like to <b>make stuff</b></p>
+        <p>Most of all, I like to <b>create things</b></p>
       </div>
       <style jsx>{`
         display: inline-block;
