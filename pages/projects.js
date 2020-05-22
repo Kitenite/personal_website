@@ -7,6 +7,7 @@ import VoyPanel from './panels/VoyPanel'
 import MetronomePanel from './panels/MetronomePanel'
 import DigitPanel from './panels/DigitPanel'
 import MinnehackPanel from './panels/MinneHackPanel'
+import CalculatorPanel from './panels/CalculatorPanel'
 
 
 export default function Blog() {
@@ -27,6 +28,10 @@ export default function Blog() {
 
       <ScrollPanel title={<a><b>Social</b> Credit App</a>}>
         <MinnehackPanel/>
+      </ScrollPanel>
+
+      <ScrollPanel title={<a><b>Concurrent</b> Calculator</a>}>
+        <CalculatorPanel/>
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>More</b> To Come</a>}/>
