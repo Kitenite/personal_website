@@ -11,7 +11,7 @@ function Metro() {
     cursor: "pointer"
   }
   return(
-    <Link href="/posts/metronome_blog.js">
+    <Link href="/posts/metronome_blog">
       <img src={"../../general/MetronomePanel.png"} alt="Panel App Preview" style={style}></img>
     </Link>
   )
