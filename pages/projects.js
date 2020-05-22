@@ -4,6 +4,7 @@ import ScrollPanel from '../components/ScrollPanel'
 
 // Content
 import VoyPanel from './panels/VoyPanel'
+import MetronomePanel from './panels/MetronomePanel'
 import DigitPanel from './panels/DigitPanel'
 import MinnehackPanel from './panels/MinneHackPanel'
 
@@ -18,6 +19,10 @@ export default function Blog() {
 
       <ScrollPanel title={<a><b>Handwriting </b>Classifier AI</a>}>
         <DigitPanel/>
+      </ScrollPanel>
+
+      <ScrollPanel title={<a><b>Synchronous </b>Metronome</a>}>
+        <MetronomePanel/>
       </ScrollPanel>
 
       <ScrollPanel title={<a><b>Social</b> Credit App</a>}>
