@@ -1,13 +1,18 @@
 const fetch = require("node-fetch");
 
 const wakeUpDyno = (url, interval = 25, callback) => {
-    const milliseconds = interval * 60000;
-    setTimeout(() => {
 
+    const milliseconds = interval * 60000;
+    setTimeout(() => { 
         try {
             console.log(`setTimeout called.`);
             // HTTP GET request to the dyno's url
-            fetch(url).then(() => console.log(`Fetching ${url}.`));
+            var date = new Date;
+            var currentHour = date.getHours();
+            if (currentHour > 7){
+                fetch(url).then(() => console.log(`Fetching ${url}.`));
+            }
+            
         }
         catch (err) { // catch fetch errors
             console.log(`Error fetching ${url}: ${err.message}

@@ -1,13 +1,16 @@
 const express = require('express')
 const next = require('next')
 const proxy = require('express-http-proxy');
-const wakeUpDyno = require("./utils/wakeDyno.js"); // my module!
+// Use to keep app awake
+const wakeUpDyno = require("./utils/wakeDyno.js");
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
-const dyno_url = "https://madebykiet.herokuapp.com"; // the url of your dyno
+
+const websiteUrl = "https://madebykiet.herokuapp.com"; // the url of your dyno
+const practiceAppUrl = "https://kallis-practice.herokuapp.com";
 
 app.prepare().then(() => {
   const server = express()
@@ -21,7 +24,8 @@ app.prepare().then(() => {
   server.listen(port, err => {
     if (err) throw err
     console.log(`> Ready on http://localhost:${port}`)
-    wakeUpDyno(dyno_url);
-
+    wakeUpDyno(practiceAppUrl);
+    // Turn on for hiring season
+    // wakeUpDyno(websiteUrl);
   })
 })
