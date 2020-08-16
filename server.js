@@ -10,7 +10,7 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 const websiteUrl = "https://madebykiet.herokuapp.com"; // the url of your dyno
-const practiceAppUrl = "https://kallis-practice.herokuapp.com";
+const practiceAppUrl = "https://kpractice.com";
 
 app.prepare().then(() => {
   const server = express()
