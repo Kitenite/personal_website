@@ -8,6 +8,8 @@ import MetronomePanel from './panels/MetronomePanel'
 import DigitPanel from './panels/DigitPanel'
 import MinnehackPanel from './panels/MinneHackPanel'
 import CalculatorPanel from './panels/CalculatorPanel'
+import KPracticePanel from './panels/KPracticePanel'
+
 
 
 export default function Blog() {
@@ -22,6 +24,10 @@ export default function Blog() {
         <DigitPanel/>
       </ScrollPanel>
 
+      <ScrollPanel title={<a><b>k</b>practice</a>}>
+        <KPracticePanel/>
+      </ScrollPanel>
+      
       <ScrollPanel title={<a><b>Synchronous </b>Metronome</a>}>
         <MetronomePanel/>
       </ScrollPanel>

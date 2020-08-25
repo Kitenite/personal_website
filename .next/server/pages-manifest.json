@@ -1,1 +1,7 @@
-{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/posts/kpractice_blog": "pages/posts/kpractice_blog.js",
+  "/posts/metronome_blog": "pages/posts/metronome_blog.js"
+}
