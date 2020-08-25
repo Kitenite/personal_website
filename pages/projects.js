@@ -24,7 +24,7 @@ export default function Blog() {
         <DigitPanel/>
       </ScrollPanel>
 
-      <ScrollPanel title={<a><b>k</b>practice</a>}>
+      <ScrollPanel title={<a><b>kpractice</b> App</a>}>
         <KPracticePanel/>
       </ScrollPanel>
       

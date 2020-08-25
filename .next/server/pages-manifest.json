@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/": "pages/index.js",
   "/posts/kpractice_blog": "pages/posts/kpractice_blog.js",
-  "/posts/metronome_blog": "pages/posts/metronome_blog.js"
+  "/projects": "pages/projects.js"
 }
