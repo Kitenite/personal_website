@@ -9,7 +9,7 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-const websiteUrl = "https://madebykiet.herokuapp.com"; // the url of your dyno
+const websiteUrl = "https://madebykiet.com"; // the url of your dyno
 const practiceAppUrl = "https://kpractice.com";
 
 app.prepare().then(() => {

@@ -8,7 +8,6 @@ class DigitRecognizer extends React.Component {
       <Layout>
         <div className="Page">
           <a className="title">Draw any digit from 0-9</a><br/>
-          <a className="title">(Currently under maintenance)</a>
           <div className="canvas-wrapper">
             <DrawingCanvas/>
           </div>

@@ -2,7 +2,8 @@ import {useState, useRef, useEffect} from 'react';
 import SignatureCanvas from 'react-signature-canvas'
 import Button from '../../../components/Button';
 import ResultGraph from './ResultGraph'
-
+import * as tf from '@tensorflow/tfjs';
+import { loadGraphModel } from '@tensorflow/tfjs-converter';
 
 export default function DrawingCanvas(){
   // useStates
@@ -13,13 +14,16 @@ export default function DrawingCanvas(){
   const [height, setHeight] = useState(null)
   const [width, setWidth] = useState(null)
   // Canvas Configuration
+  const canvasWidth =  Math.min(height, width)/2;
+  const brushSize = (canvasWidth/30).toString(10);
+  // Tensorflow Model 
+  const MODEL_URL = '/model/model.json';
+
 
   if (process.browser) {
     useEffect(() => setHeight(document.children[0].clientHeight), [document.children[0].clientHeight])
     useEffect(() => setWidth(document.children[0].clientWidth), [document.children[0].clientWidth])
   }
-  const canvasWidth =  Math.min(height, width)/2;
-  const brushSize = (canvasWidth/30).toString(10);
 
   // Functions
   const clearPad = () => {
@@ -35,28 +39,15 @@ export default function DrawingCanvas(){
   };
 
   // Query our AI model
-  const apiCall = (image_array) => {
-    const model_url = '/api/v1/models/digit_model:predict';
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = false;
-    // get a callback when the server responds
-    xhr.addEventListener('load', () => {
-      // Get results and process
-      console.log(xhr.response)
-      console.log(xhr.status)
-      if (xhr.status != 500){
-        let reponse = JSON.parse(xhr.responseText);
-        processResult(reponse)
-      } else{
-        setError(true)
-      }
-    });
-    xhr.open('POST', model_url);
-    xhr.send(JSON.stringify({ "instances": image_array }));
+  const apiCall = async (image_array) => {
+    const model = await loadGraphModel(MODEL_URL);
+    const pixels = tf.tensor([image_array])
+    const result = model.predict(pixels);
+    processResult(result.dataSync())
   }
 
   const processResult = (reponse) => {
-    let unsorted_array = reponse["predictions"][0];
+    let unsorted_array = reponse;
     let sorted_array = Array(unsorted_array.length);
     // Get all results above 0.00%
     for (var i = 0; i< unsorted_array.length; i++){
@@ -69,6 +60,7 @@ export default function DrawingCanvas(){
     }
     setResultArray(sorted_array);
   }
+
   const processImage = (img) => {
     // Scale image
     const canvas =document.createElement('canvas');
