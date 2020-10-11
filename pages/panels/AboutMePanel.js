@@ -4,11 +4,10 @@ function AboutMePanel() {
    <div>
       <img src={"../../general/AboutMe.png"} alt="Photo of Kiet"/>
       <div className="content" >
-        <a>business | cs | design</a>
-        <p>I came to the US at the age of 14 <b>from Vietnam</b></p>
-        <p>I am majoring in <b>Business</b> and <b> Computer Science</b>, minoring in <b>Design</b></p>
-        <p>I am <b>self-taught</b> in English, Programming and Entreprenuership</p>
-        <p>Most of all, I like to <b>create things</b></p>
+        <a>My Journey</a>
+        <p>I started my own tech company as a business student.</p>
+        <p>As I started getting involved in programming the product, I developed a passion for it.</p>
+        <p>Now, I like to design and build application that do cool things.</p>
       </div>
       <style jsx>{`
         display: inline-block;
