@@ -13,7 +13,7 @@ import MinnehackPanel from './panels/MinneHackPanel'
 export default function Index() {
   return (
     <Layout page_title="Made By Kiet">
-      <Title><a>Zachary <b>Sobania</b></a></Title>
+      <Title><a>kiet <b>Ho</b></a></Title>
 
       <ScrollPanel>
         <AboutMePanel/>
