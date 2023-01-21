@@ -4,7 +4,7 @@
   "description": "Kiet Ho's personal website",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "npx nodemon server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
@@ -15,9 +15,9 @@
     "@tensorflow/tfjs-node": "^2.3.0",
     "@zeit/next-css": "^1.0.1",
     "cors": "^2.8.5",
-    "express": "^4.17.3",
+    "express": "^4.17.1",
     "express-http-proxy": "^1.6.2",
-    "next": "^12.1.0",
+    "next": "^9.5.4",
     "next-images": "^1.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
